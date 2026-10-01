@@ -73,12 +73,14 @@
     if(riskFloor!==null)numeric('riskFloor',riskFloor,0);
     if(habitatTarget!==null)numeric('habitatTarget',habitatTarget,0,1);
     const shape=baseShape(pattern);
-    const reference=shape.map(q=>meanFlow*(0.85*q+0.15));
-    const available=reference.map(q=>q*supplyFactor);
-    const record=Array.from({length:100},(_,y)=>{
+    let record=Array.from({length:100},(_,y)=>{
       const factor=1.6-1.2*y/99;
       return shape.map(q=>meanFlow*(0.85*factor*q+0.15*factor*factor));
     });
+    const normalization=meanFlow/mean(designHydrograph(record,50));
+    record=record.map(year=>year.map(q=>q*normalization));
+    const reference=designHydrograph(record,50);
+    const available=reference.map(q=>q*supplyFactor);
     const sorted=record.flat().sort((a,b)=>b-a);
     const rank=347/365*(sorted.length+1),lo=Math.floor(rank);
     const q347=sorted[lo-1]+(sorted[lo]-sorted[lo-1])*(rank-lo);
@@ -89,6 +91,9 @@
     const entry=floor===null?null:Array(DAYS).fill(floor);
     const lower=riskFloor===null?null:classHydrograph.map((q,i)=>Math.max(q,bound99[i],riskFloor,recordMinimum));
     const crossing=lower!==null && lower.some((q,i)=>q>median[i]);
+    const crossingDay=crossing?lower.findIndex((q,i)=>q>median[i]):-1;
+    const operandNames=['Shifted class','99% bound','Supplied daily low-flow bound','Record minimum'];
+    const firstCrossing=crossing?{day:crossingDay+1,lower:lower[crossingDay],median:median[crossingDay],term:operandNames[[classHydrograph[crossingDay],bound99[crossingDay],riskFloor,recordMinimum].indexOf(lower[crossingDay])]}:null;
     const baseline=lower===null||crossing?null:classHydrograph.map((q,i)=>Math.max(Math.min(q,median[i]),bound99[i],riskFloor,recordMinimum));
     const habitatCurves=SEASONS.map((label,s)=>{
       const seasonalFactor=[0.65,1.2,1,0.8][s];
@@ -96,22 +101,34 @@
       return {season:label,points,selectedFlow:habitatFlow(points,habitatTarget)};
     });
     const top=habitatCurves.some(c=>c.selectedFlow===null)?null:Array.from({length:DAYS},(_,d)=>habitatCurves[season(d)].selectedFlow);
+    const scores=available.map((q,d)=>{
+      const points=habitatCurves[season(d)].points;
+      if(q<points[0][0]||q>points.at(-1)[0])return null;
+      if(q===points[0][0])return points[0][1];
+      const i=points.findIndex(p=>p[0]>=q),[a,b]=[points[i-1],points[i]];
+      return a[1]+(b[1]-a[1])*(q-a[0])/(b[0]-a[0]);
+    });
+    const habitatPerformance={scores,unknownDays:scores.filter(v=>v===null).length,
+      belowDays:habitatTarget===null?null:scores.filter(v=>v!==null&&v+1e-12<habitatTarget).length,
+      meetsDays:habitatTarget===null?null:scores.filter(v=>v!==null&&v+1e-12>=habitatTarget).length};
     const methods=[
       summarize('swiss','Swiss-derived entry',entry,entry===null?'Unavailable: missing table scale, large-river screen (Q347 ≥ 60 m³/s), or floor not below Q347.':'Illustrative concave table; constant low-flow floor.',available),
       summarize('kazakh','Kazakh-style baseline',baseline,riskFloor===null?'Unavailable: synthetic daily low-flow-risk operand missing.':crossing?'Unavailable: lower bounds cross the median hydrograph under the strict pre-cap test.':'Standard probability shift, shifted shape, strict pre-cap screen; winter and spawning limbs unavailable and omitted.',available),
-      summarize('top','Synthetic habitat study',top,top===null?'Unavailable: habitat target missing or not attained by a supplied seasonal curve.':'Lowest flow reaching target on each synthetic seasonal habitat curve; hypothetical priority reach.',available)
+      summarize('top','Top-tier habitat example',top,top===null?'Unavailable: habitat target missing or not attained by a supplied seasonal curve.':'Lowest flow reaching target on each synthetic seasonal habitat curve; hypothetical priority reach.',available)
     ];
     return {reference,available,methods,diagnostics:{q347,recordMinimum,shiftedClass,median,bound99,classHydrograph,
-      entryTable:TABLE.map((p,i)=>({breakpoint:p.q,floor:entryScale===null?null:p.floor*entryScale,
+      firstCrossing,habitatPerformance,entryTable:TABLE.map((p,i)=>({breakpoint:p.q,floor:entryScale===null?null:p.floor*entryScale,
         slope:entryScale===null||i===TABLE.length-1?null:entryScale*(TABLE[i+1].floor-p.floor)/(TABLE[i+1].q-p.q)})),habitatCurves},assumptions:[
       '100 deterministic synthetic years of 365 days. No observed record, statistical validation or ecological status classification.',
       'All four reference patterns have the selected annual mean; supplyFactor changes available volume only. Requirements and reference remain fixed when supply changes.',
-      'Annual record year y (0–99) uses f=1.6−1.2y/99 and Q=meanFlow×(0.85f×mean-one seasonal shape+0.15f²). Type shapes are supplied synthetic operands, not an accepted historical reconstruction.',
+      'Annual record year y (0–99) uses f=1.6−1.2y/99 and raw Q=meanFlow×(0.85f×mean-one seasonal shape+0.15f²). The entire record is then scaled so the interpolated median hydrograph has the selected annual mean; this median is the reference. Type shapes are synthetic operands, not an accepted reconstruction.',
+      'The shifted-shape choice follows the report’s interim interpretation, pending confirmation. The scalar record-minimum interpretation is also interim. Synthetic years are pointwise ordered, so the 99% and record-minimum bounds never control while the class hydrograph exists.',
       'Annual exceedance hydrographs interpolate adjacent ranked years at Weibull positions r/101. Each bound uses its own probability; the design-class shift is applied once to both magnitude and shape.',
       'Q347 is an empirical pooled daily exceedance approximation at 347/365, interpolated at r/(36500+1); it is not a statutory Swiss determination.',
       'Entry table and 60 m³/s screen are teaching assumptions, not the Swiss statutory table or an adopted Uzbek table.',
       'riskFloor is an externally supplied synthetic DAILY operand, not a multi-day statistic or a derived ecological duration/return-period constraint.',
       'Kazakh-style winter and spawning limbs are omitted because their prerequisites are absent. Strict crossing screening applies to the selected class; no reach-wide acceptance is established.',
+      'Changing synthetic river size rescales habitat-flow coordinates along with the hydrological record. Changing pattern or availability holds the habitat study fixed. Habitat suitability at actual available flow is interpolated on both curve limbs; outside the curve domain it is unknown.',
       'Habitat curves and selection target are hypothetical study inputs for an eligible priority reach, without calibrated biological evidence or holistic assessment.',
       'Habitat curve flows are [0,0.2,0.5,0.85,1.4] × meanFlow × seasonal factors [0.65,1.2,1,0.8] (DJF/MAM/JJA/SON); scores are [0,0.3,0.7,0.9,0.65]. Lowest qualifying flow is linearly interpolated; unattained targets return no result.',
       'Season order: Winter (DJF), Spring (MAM), Summer (JJA), Autumn (SON). Volumes integrate daily flow over 86400 seconds.',
