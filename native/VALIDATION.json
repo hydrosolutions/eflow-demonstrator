@@ -1,0 +1,66 @@
+{
+  "status": "native_implementation_complete_pending_overall_independent_application_admission",
+  "annualScenarios": 4,
+  "annualDaysEach": 365,
+  "annualRunAdmission": {
+    "status": "passed_pending_independent_review",
+    "scenarios": 4,
+    "wallSeconds": 41.800747208995745,
+    "maxTotalSeconds": 1200,
+    "sourceHashes": {
+      "guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+      "run_guided.py": "01b3f90f7fefca19466f62fdfd4b9c9c1bf1954f86a72c57845b6da878c1baac",
+      "run_shortfall.py": "a2709a5158ac329d0f5a07adddff96aaf73a557179fead601208853a298dd42c",
+      "supervise.py": "a6e9b255bf4c7dced7dfc76b35099b53a1c58a2a10a5fd5c06b9add8fad15aa1",
+      "pyproject.toml": "d28233c0d01a34d501c291625d64922b7cf9909711f41a9bf9a43841c4dc7b20",
+      "uv.lock": "1585f57b1f9e04c887d9b6bc05a5fb1fb3e0f211d0fd071aeed6e19b39034957"
+    }
+  },
+  "chunkEquivalence": {
+    "status": "passed",
+    "period": "2025-05-31 through2025-06-05",
+    "continuousDays": 6,
+    "chunkDays": 3,
+    "initialStorageM3": 5000000,
+    "checks": [
+      "water/salt/criterion/deliverability arrays equal",
+      "all physical balances exact",
+      "Fishy intervals and volumes equal",
+      "spill/canal/return exercised",
+      "complete water+salt inventory handoff and absolute date forcing maintained"
+    ],
+    "inputs": {
+      "../../native_audit/smoke-v5-continuous/result.json": "1196b8432ea1f43b7f8d6217c1274dddd9d2b3f771a0c4ee45010a64d6d18d2c",
+      "../../native_audit/smoke-v5-chunked/result.json": "b09acfdf0522c6a77683d380e7e7d2c595245ba53c4b72b3797251de7ae922aa"
+    }
+  },
+  "reproduction": {
+    "status": "passed",
+    "case": "normal-managed6dayprefilledsmoke",
+    "physicalCriteriaFishyAndNativeDigestsIdentical": true,
+    "excluded": "runtimeSeconds only",
+    "resultSha256": "62e540c6fe612e2fc10d54900b72aa4fd4d01385e36fce70cdbe9f4714b093dc"
+  },
+  "zeroEvidence": {
+    "status": "passed",
+    "days": 3,
+    "actualNativeZero": true,
+    "positiveEcologicalCriterion": "three shortfalls",
+    "zeroIssuedCriterion": "three met",
+    "dryConcentration": null,
+    "missingDataSubstituted": false,
+    "limitations": "Explicit zero-boundary short evidence case, not an annual scenario"
+  },
+  "pythonApplicationChecks": "4passed",
+  "rawEvidenceDirectory": "../../native_audit (outside shipped static app)",
+  "frozenModelSha256": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+  "payloadHashes": {
+    "../data/guided.json": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "../data/guided-data.js": "d6eb7c3717fa915f0bcc31e939cd8ba8d8aa2be6ab1561ddc344eb7136b0211b",
+    "guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+    "pyproject.toml": "d28233c0d01a34d501c291625d64922b7cf9909711f41a9bf9a43841c4dc7b20",
+    "uv.lock": "1585f57b1f9e04c887d9b6bc05a5fb1fb3e0f211d0fd071aeed6e19b39034957"
+  },
+  "formatting": "ruff format applied before native source freeze",
+  "styleOnlyOpenItems": "Inherited broad ruff lint reports dictionary-loop style, import order, explicit-naive daily date and root logger suggestions. Frozen executed scripts retained bytewise; no functional lint failure or source rewrite performed after admission."
+}

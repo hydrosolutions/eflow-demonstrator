@@ -1,3 +1,35 @@
+# E-flow workshop demonstrator
+
+Start with **[guided.html](guided.html)** for the connected five-step workshop: classify water bodies, map them to a network, compare a natural-system teaching scenario with managed operation, inspect a seasonal instruction and Fishy findings, and export a traceable record.
+
+All public inputs are synthetic. This is a static replay of saved native calculations, with small explicitly labelled browser teaching calculations. It does not run Taqsim or Fishy live, make official designations, adopt a national prescription or determine ecological status. Native calculation provenance, bounded-run outcomes and reproduction instructions are supplied with `native/` and `data/guided.json`. A missing/unadmitted native result is shown as pending, never replaced by made-up output.
+
+Independent review and validation are summarized in `verification/REVIEW_OUTCOME.txt`. The calculations and rendered walkthrough passed. **Before workshop release:** verify JSON and readable downloads in your standard browser; completed file receipt could not be confirmed through the in-app browser automation. The exact current JSON remains inspectable in the record panel.
+
+## Guided 18-minute route + 2-minute buffer
+
+1. **0–3 min: classify.** Select natural R1, constructed C1 and altered-natural R2. A hypothetical designation changes R2's assessment route without changing its origin or the physical replay. W1 is natural with a receptor overlay, not a fourth origin class. Restore controls return the assumed starting record.
+2. **3–6 min: connect.** Toggle landscape/network. R2a and R2b belong to R2; junctions are distinct. S1 is a storage object. C1 supplies irrigation, whose consumption and return explain D1. W1's unestablished supply remains dashed and unsized.
+3. **6–10 min: compare.** Use same-forcing natural/managed pairs at R2b. Inspect transformations, a daily hydrograph and storage/balance evidence. The assumed 5% exchange is retained; the memoryless natural counterpart does not claim groundwater physics or unmeasured lateral inflow. Pre-existing artificial stored water is not dumped into the natural run.
+4. **10–15 min: apply one rule.** Select R2 baseline. Spend two minutes tracing the seasonal candidate, one minute on dry supply, one on separate shortfall evidence and one on matching Fishy criteria. Ecological schedule and issued instruction remain separate. The 10/7/5 example is a separate supplied-evidence exercise, not an altered native trace.
+5. **15–18 min: record.** Read the missing evidence and responsible role, export current JSON/readable summary, and reserve two additional minutes for questions. Deep links preserve body, scenario, day, mode, step, receptor path and selected classification; unsupported links reset visibly. A shared link preserves the selected body’s override; other bodies return to the declared defaults on reload. Exports record the selected body, not a saved project of every exploratory override.
+
+After the tour, explore entry/presumptive/top, C1 depth/velocity, W1 supplied-geometry balance, source-reduction/mixing and uncertainty examples. Each is an independent teaching calculation with explicit assumptions; these controls do not rerun or modify the native replay. Entry/top/presumptive or a nonmatching body cannot inherit an R2 baseline delivery instruction or verdict. The optional entry uses a deliberately simplified table, **not the statutory Swiss table**. The optional wetland is not a newly simulated branch. Quantity adequacy does not establish biological or chemical adequacy.
+
+## Record and identity boundaries
+
+- `guided-six-unit-synthetic-v1` is the new connected case. Numerical assessment is at **R2 / R2b**; selecting R1, a canal, reservoir or wetland does not relabel those results.
+- Classification stores origin, alteration, designation evidence/validity, route, use category, plan-unit link, reach mapping and receptor facts separately. Unassigned plan unit and unsupported use category remain null.
+- Exported revisions are independent snapshots. The current record names actual dataset, scenario, reference, policy, checkpoint, units, provenance and missing evidence. Downloading a new revision never overwrites a prior record in application memory.
+- Legacy W1 passports now use `eflow-passport/2`: natural origin plus receptor assessment, and an unknown/null carrier path. Old exports are not rewritten.
+- The canonical 100-year R1 method fixture (70 million m³/year; June 5.52 m³/s) and the older nine-water-body basin remain separate and reachable below. Their protected physical datasets and numeric engine are unchanged. No project-observed time series is bundled in this public update.
+
+Serve this folder with a static HTTP server (for example `python3 -m http.server 8768 --bind 127.0.0.1`) and open `http://127.0.0.1:8768/guided.html`. The page loads its data from a local JavaScript payload; no network service, account or browser Python is needed. Run application checks with `node --test tests/*.cjs`.
+
+---
+
+## Earlier separate examples
+
 # Synthetic e-flow demonstrator
 
 A standalone teaching example of TaqSim water and salt simulation, linked thermal diagnostics, and Fishy water-body criterion checks.
