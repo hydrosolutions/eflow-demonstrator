@@ -1,0 +1,29 @@
+[project]
+name = "zarafshan-current-stack-acceptance"
+version = "0.0.1"
+requires-python = ">=3.13"
+dependencies = ["fishy[taqsim]", "taqsim", "incidence", "pytest>=8.3", "ruff", "psutil"]
+
+[tool.uv]
+package = false
+override-dependencies = ["taqsim @ git+https://github.com/hydrosolutions/taqsim.git@54c00a8784704dd12ef74de38cd5bb881df30f6d"]
+
+[tool.uv.sources]
+fishy = { git = "https://github.com/hydrosolutions/fishy.git", rev = "881660e8901987d63d89caf61ef0d30991000301" }
+taqsim = { git = "https://github.com/hydrosolutions/taqsim.git", rev = "54c00a8784704dd12ef74de38cd5bb881df30f6d" }
+incidence = { git = "https://github.com/hydrosolutions/incidence.git", subdirectory = "bindings/python", rev = "665da4e0d81ab28921b8d5d2edbb9be27f4ec612" }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+extend-exclude = ["fixtures"]
+line-length = 120
+target-version = "py313"
+
+[dependency-groups]
+dev = [
+    "pytest-cov>=7.1.0",
+]
