@@ -1,0 +1,9 @@
+'use strict';
+const savedContext=EflowAssessment.context(location.search,'basin');
+const savedNote=document.getElementById('saved-context-note');
+savedNote.textContent=(savedContext.requested&&!savedContext.valid?'Invalid workshop context. No requested case or node was loaded. ':savedContext.requested?'R1 → wb-upstream is a context-only teaching analogy, not an identity mapping. ':'')+'Dataset: saved-basin-2025-v1. These are precomputed TaqSim / Fishy results with the existing fixed 30% normal-reference flow criterion. No workshop candidate has been passed into allocation or Fishy. No live run occurs.';
+if(savedContext.requested&&savedContext.valid){waterBodyId='wb-upstream';nodeId='wb-upstream';}
+let savedRecord=null;
+function refreshSavedPassport(){savedRecord=EflowAssessment.savedPassport(results[scenarioIndex],waterBodyId,scenarioIndex,day,savedContext.requested&&savedContext.valid?{conceptualCaseId:'R1',relationship:'teaching analogy only; separate units and datasets'}:null);document.getElementById('saved-record-summary').textContent=savedRecord.waterBodyId+' · '+savedRecord.scenarioName+' · '+savedRecord.selectedDate+' · '+savedRecord.findings.shortfall_days+' flow shortfall days / '+savedRecord.findings.salt_exceedance_days+' salt exceedance days over the saved year. Ecological status: not established.';document.getElementById('saved-passport-json').textContent=JSON.stringify(savedRecord,null,2);}
+document.getElementById('download-saved-passport').onclick=()=>{refreshSavedPassport();const url=URL.createObjectURL(new Blob([JSON.stringify(savedRecord,null,2)],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=savedRecord.waterBodyId+'-'+savedRecord.scenarioId+'-saved-passport.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+refreshSavedPassport();render();
