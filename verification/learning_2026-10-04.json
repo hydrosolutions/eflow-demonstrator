@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-04",
+  "status": "reviewed_draft_with_legacy_download_receipt_check",
+  "scope": "Six-exercise illustrated learning portal; preserved method comparison and older scientific cases; English, Russian, Uzbek Latin; no native reruns or deployment.",
+  "review": {
+    "scientific": "Independent source review after a simulated learner pass through captured rendered lessons. Six findings repaired and independently read back by coordinator.",
+    "language": "Independent bounded catalog/terminology review. Critical ecological-potential, consumptive-use and unsupported species-name findings repaired. Not certified translation.",
+    "learner": "Nine conceptual tasks answered from rendered evidence before reviewer read answer-key source. No real NCECC staff or novice timing evidence."
+  },
+  "applicationChecks": 65,
+  "browser": {
+    "core": "All six exercises opened and revealed in EN/RU/uz-Latn; no missing/invalid render text; prediction, retry, keyboard slider and missing uncertainty exercised.",
+    "context": "Normal selected ledger explicitly separated from fixed drought graph; basin scenario/node/day survive locale switch; return link restores learning input state.",
+    "downloads": "Six new portal files received from actual browser clicks, opened and checked: JSON and readable allocation cards in three languages, exact same numerical result.",
+    "layout": "Desktop and 640px Russian reflow inspected; actual uncertainty illustration and annual-reference worked arithmetic inspected.",
+    "legacy": "All four pages sampled in Russian; Uzbek basin and core sampled; actual rendered dynamic gaps repaired. Export summaries retain source evidence and add localized interpretation."
+  },
+  "invariants": [
+    "Frozen original and sharing native datasets, engine and native sources unchanged; hashes protected by tests.",
+    "Older R1 laboratory, guided R2b and nine-body saved basin remain separate cases.",
+    "No report qmd content or actual basin model changed."
+  ],
+  "openReleaseChecks": [
+    "Legacy guided JSON/readable receipt was not observed in the in-app browser, before or after an attached-anchor compatibility repair; inspect and verify in the standard workshop browser.",
+    "Direct file:// launch was blocked by browser URL policy, so no direct-file launch validation is claimed. Local HTTP runtime and bundled dependencies were checked.",
+    "Native 200% browser zoom and real staff timing/usability remain unmeasured. Russian 640px reflow is only a narrow-layout check."
+  ],
+  "limitations": [
+    "Synthetic browser exercises and saved native scenarios; no calibrated biology, official designation, national adoption or legal fault established.",
+    "Translations are provisional agent-reviewed teaching text using documented sources. Minor unit typography and Uzbek apostrophe conventions across legacy/source-exact material can differ."
+  ]
+}

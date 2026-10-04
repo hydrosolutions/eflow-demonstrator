@@ -7,9 +7,10 @@ const DESIGNATIONS=['none','not_searched','pending','designated','expired','reje
 const unavailable=(reason,nextAction='Obtain and review supporting evidence',responsibleRole='Basin assessment lead',reviewTrigger='New evidence or changed pressure')=>({value:null,reason,nextAction,responsibleRole,reviewTrigger});
 function context(search,page='assessment'){
  const p=new URLSearchParams(search),key=page==='playground'?'workshop':page==='basin'?'workshopCase':'case';
- const requested=[...p.keys()].length>0,id=p.get(key)||(!requested?'R1':null),variant=p.get('variant')||'baseline';
- const allowed=page==='basin'?[key,'node']:[key,'variant'];
- const valid=!!id&&Object.hasOwn(CASES,id)&&CASES[id].variants.includes(variant)&&![...p.keys()].some(k=>!allowed.includes(k)||p.getAll(k).length!==1)&&(page!=='playground'||id==='R1')&&(page!=='basin'||id==='R1'&&p.get('node')==='wb-upstream');
+ const requested=[...p.keys()].some(k=>!['lang','returnTo'].includes(k)),id=p.get(key)||(!requested?'R1':null),variant=p.get('variant')||'baseline';
+ const allowed=page==='basin'?[key,'node','lang','returnTo']:[key,'variant','lang','returnTo'];
+ const localeValid=!p.has('lang')||['en','ru','uz-Latn'].includes(p.get('lang'));const returnValid=!p.has('returnTo')||/^learn\.html(?:[?#]|$)/.test(p.get('returnTo'))&&!/[\\]/.test(p.get('returnTo'));
+ const valid=localeValid&&returnValid&&!!id&&Object.hasOwn(CASES,id)&&CASES[id].variants.includes(variant)&&![...p.keys()].some(k=>!allowed.includes(k)||p.getAll(k).length!==1)&&(page!=='playground'||id==='R1')&&(page!=='basin'||id==='R1'&&p.get('node')==='wb-upstream');
  return {valid,requested,caseId:valid?id:null,variant:valid?variant:null,message:valid?'':'Invalid workshop context. Choose a listed case; no route has been calculated.'};
 }
 function classify(origin,designation='none'){
