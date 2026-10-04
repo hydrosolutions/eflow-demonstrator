@@ -6,6 +6,8 @@ All public inputs are synthetic. This is a static replay of saved native calcula
 
 Independent review and validation are summarized in `verification/REVIEW_OUTCOME.txt`. The calculations and rendered walkthrough passed. **Before workshop release:** verify JSON and readable downloads in your standard browser; completed file receipt could not be confirmed through the in-app browser automation. The exact current JSON remains inspectable in the record panel.
 
+Drought-sharing validation: `verification/drought_sharing_science.json`, `verification/drought_sharing_annual.json`, `verification/drought_sharing_browser.json` and `native/SHARING_VALIDATION.json`. The final suite passes 43 application checks. The browser-download receipt remains a draft-release check.
+
 ## Guided 18-minute route + 2-minute buffer
 
 1. **0–6 min: define the water bodies and network.** Select natural R1, constructed C1 and altered-natural R2. A hypothetical designation changes R2's assessment route without changing its origin or the physical replay. W1 is natural with a receptor overlay, not a fourth origin class. Restore controls return the assumed starting record. Classification determines the assessment route; network connections determine water accounting. Toggle landscape/network without losing the selected water body. R2a and R2b belong to R2; junctions are distinct. S1 is a storage object. C1 supplies irrigation, whose consumption and return explain D1. W1's unestablished supply remains dashed and unsized.
@@ -16,6 +18,16 @@ Independent review and validation are summarized in `verification/REVIEW_OUTCOME
 After the tour, explore entry/presumptive/top, C1 depth/velocity, W1 supplied-geometry balance, source-reduction/mixing and uncertainty examples. Each is an independent teaching calculation with explicit assumptions; these controls do not rerun or modify the native replay. Entry/top/presumptive or a nonmatching body cannot inherit an R2 baseline delivery instruction or verdict. The optional entry uses a deliberately simplified table, **not the statutory Swiss table**. The optional wetland is not a newly simulated branch. Quantity adequacy does not establish biological or chemical adequacy.
 
 The four visible steps retain stable internal link IDs `1`, `3`, `4`, `5`. An older `step=2` link opens the combined first step in network view. Older comparison, rule and record links keep their meanings; Previous/Next visits the map only once.
+
+## Comparing allocation choices during drought
+
+Compare and Test a rule share one allocation selection, encoded by the saved scenario ID. **Ecology first (teaching)** uses the original scenarios. **Share drought water (teaching)** selects the separate `dry-managed-sharing` replay in `guided-sharing-synthetic-v1`; it is available only for dry forcing. Returning to normal visibly restores ecology first. Existing URLs keep their original scenario meanings.
+
+The sharing assumption diverts up to 20% of river flow after the retained 5% natural exchange, limited by the seasonal irrigation request and actual available water. The daily cap is rounded down to 2 m³/day increments: `2 × floor(0.20 × post-exchange daily volume / 2)` in m³/day. This conservative numerical representation can leave diversion slightly below the nominal 20% cap. Half the diverted water is consumed and half returns on the same day. **20% is a teaching assumption, not a recommended percentage or a legal allocation rule.** Domestic and industrial demand and hydropower objectives are absent. The receiving river serves downstream functions and uses; its flow is not consumed exclusively by ecology.
+
+The ecological schedule is unchanged. The issued instruction uses a separate allocation-policy version and the conditional deliverability after committed diversion. Low-runoff shortage, additional downstream reduction under allocation and failure to meet an instruction are different findings. Daily water accounting displays gross diversion, consumption, return and river flow. Three dry curves distinguish the natural system, ecology first and sharing; an explicit notice explains overlap when natural and priority flows coincide.
+
+The add-on retains its own dataset, native run, allocation and issued-criterion identities. Its comparison names the frozen parent payload and is admitted only when ordered dates, reference, ecological schedule, forcing, checkpoint and mapping match the original admitted scenarios. Original natural/priority data are not relabelled as sharing results. JSON and readable exports retain the selected policy and parent provenance. All curves are saved native replays; selectors do not launch simulations or optimise an allocation. Missing or unadmitted add-on evidence stays pending.
 
 ## Record and identity boundaries
 
