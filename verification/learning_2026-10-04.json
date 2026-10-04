@@ -28,5 +28,21 @@
   "limitations": [
     "Synthetic browser exercises and saved native scenarios; no calibrated biology, official designation, national adoption or legal fault established.",
     "Translations are provisional agent-reviewed teaching text using documented sources. Minor unit typography and Uzbek apostrophe conventions across legacy/source-exact material can differ."
-  ]
+  ],
+  "diagramCorrection": {
+    "date": "2026-10-04",
+    "trigger": "User identified canals/drainage on mountain background and dangling model-role arrows; prior visual review had missed these defects.",
+    "changes": [
+      "Valley-floor canal, labelled irrigated fields, drainage return and wetland with explicitly unknown supply; unchanged native network topology",
+      "Seven complete model-role boxes including supplied criteria; attached colour-matched arrows, physical/evidence legend and accessible explanation",
+      "Readable keyboard-scrollable diagrams at narrow widths; translated EN/RU/Uzbek Latin labels"
+    ],
+    "validation": [
+      "65 existing application checks pass, including protected scientific fixture hashes",
+      "Actual EN/RU/Uzbek Latin desktop renders inspected",
+      "Russian 640px diagram scroll reaches both ends without page overflow; overlay label clearance verified",
+      "Independent review of rendered diagrams and source; cosmetic findings corrected"
+    ],
+    "scopeLimit": "Bounded correction/review of these two diagrams, not a new claim that every demonstrator page is defect-free."
+  }
 }
