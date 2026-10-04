@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "date": "2026-10-04",
+  "scope": "Independent bounded review of merging Classify and Connect into one visible first step; no product implementation edits by reviewer.",
+  "baseCommit": "b699963ff27f56da25500a44fca1a9a0397840a2",
+  "changedFiles": [
+    "README.md",
+    "guided.html",
+    "guided.js"
+  ],
+  "findings": [],
+  "resolvedFinding": "Updated obsolete Return to Classify instruction to Return to Water bodies & network.",
+  "checks": {
+    "sourceNavigation": "STEPS=[1,3,4,5]; Previous/Next traverses index not numeric increments; endpoints disabled; visible progress uses index+1 of4.",
+    "legacyLinks": "Old step2 normalizes to step1 with network=true; old steps3/4/5 retain Compare/Rule/Record meaning; new view query validates landscape|network and preserves map toggle on reload.",
+    "selection": "Map toggle only changes network view, not selected body/classification; URL stores selected body plus override/view.",
+    "copyAndTiming": "Four visible labels, combined0\u20136minute section and updated README, same18+2minute workshop total.",
+    "styles": "Existing flex navigation supports4items; no CSS edit needed.",
+    "protectedContent": "Numerical engines, native source/data and canonical fixtures unchanged; selected protected files byte-equal HEAD.",
+    "existingTestSuite": {
+      "passed": 38,
+      "failed": 0,
+      "newTestsAdded": false
+    },
+    "syntaxCheck": "guided.js passed",
+    "diffCheck": "passed"
+  },
+  "browserReview": {
+    "source": "Root actual browser walkthrough",
+    "status": "passed",
+    "reportedChecks": [
+      "Existing step3 remained Compare on reload",
+      "Previous from Compare visits combined first step once",
+      "Visible next sequence2\u21923\u21924, disabled at end",
+      "Legacy step2 normalized to step1/network",
+      "Reload preserved view and selected R1 designation"
+    ],
+    "screenshot": "navigation_merged.jpg"
+  },
+  "limitations": [
+    "This UI-only change does not rerun native scenarios or update scientific outputs.",
+    "Prior download-completion verification limitation remains unchanged; no download attempt or release-admission claim in this review."
+  ],
+  "sha256": {
+    "README.md": "2f703e6e8b9055bfd99ac1270ec9070071909264c50bf0702bc55f2b6ac10361",
+    "guided.html": "8d0c3d4da914a5c11f32c5a1c67110c45df15c01707cb9d087c237c7c52a552d",
+    "guided.js": "aee04b7a7914173f8df81d6812297ecdd70175c63071f5191e73dca75723d9c8",
+    "guided-engine.js": "1c241567e00c1478700c2a864207410c9db0bdafd7fc9c26f731fbab7999d131",
+    "playground-engine.js": "fb3b7b82adf8ceb5b2c0abfe5468811136ce7c3e246b6b6f354bda9bbb000212",
+    "data/guided.json": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "data/guided-data.js": "d6eb7c3717fa915f0bcc31e939cd8ba8d8aa2be6ab1561ddc344eb7136b0211b",
+    "workshop-fixture.json": "e6ae21eabdab24592d0b2e1f0999c5d6017bd128b14b2dbcee01b9a34cef0453"
+  }
+}
