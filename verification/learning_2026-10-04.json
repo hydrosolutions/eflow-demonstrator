@@ -44,5 +44,25 @@
       "Independent review of rendered diagrams and source; cosmetic findings corrected"
     ],
     "scopeLimit": "Bounded correction/review of these two diagrams, not a new claim that every demonstrator page is defect-free."
+  },
+  "chuWorkflowUpdate": {
+    "date": "2026-10-05",
+    "scope": "Replaces generic conceptual diagram with Chu interface-based teaching diagram; numerical examples unchanged.",
+    "sources": {
+      "chu-swatplus": "429e42fef63a3856c06a44b2599306dd99ab2d1c",
+      "zarafshan-swatplus": "be19315cc3f4c7d5b51f2a6538a690e9df5b9985"
+    },
+    "interfaces": [
+      "SWAT+ to Taqsim: availability; Taqsim to SWAT+: realised management",
+      "SWAT+ to MODFLOW: recharge; MODFLOW to SWAT+: signed river exchange and drain returns",
+      "Taqsim to MODFLOW: canal seepage recharge bypassing SWAT+ aquifers",
+      "Reconciled natural/managed SWAT+ hydrographs and separately supplied criteria support Fishy assessment"
+    ],
+    "validation": [
+      "65 application tests pass, protected scientific fixture hashes unchanged",
+      "Actual EN/RU/Uzbek Latin desktop renders inspected; Russian 640px keyboard scroll reaches both ends with no page overflow",
+      "Independent primary-source review corrected ownership of signed river-exchange calculation; rendered review completed before delivery"
+    ],
+    "limits": "Sequential exchanges/iterations, not a live API. No claim of complete Chu validation or implemented Zarafshan dynamic coupling. Older open release checks remain."
   }
 }

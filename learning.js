@@ -106,25 +106,36 @@ function wrapped(x,y,value,width){const words=value.split(' '),lines=[];let line
 function modelRoles(){
  const id='learning-roles';
  const box=(x,y,w,h,title,description,tone='physical')=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="13" fill="${tone==='physical'?'#eef5f5':'#f5f0fa'}" stroke="${tone==='physical'?'#7ba7b4':'#a28cbb'}" stroke-width="2"/>${diagramText(x+18,y+30,title,w-36,'start','diagram-node-title')}${description?diagramText(x+18,y+64,description,w-36):''}`;
- let s='<rect width="900" height="725" fill="#fcfdfb"/>';
- // Arrows terminate exactly at the explicitly drawn box edges.
- s+=diagramArrow(id,'M290 90 L610 90');
- s+=diagramArrow(id,'M170 160 L170 290 L330 290');
- s+=diagramArrow(id,'M610 126 L570 279','water',true);
- s+=diagramArrow(id,'M730 160 L730 235','evidence');
- s+=diagramArrow(id,'M290 530 L355 530','evidence');
- s+=diagramArrow(id,'M575 500 L598 500 L598 369 L660 369 L660 345','evidence');
- s+=diagramArrow(id,'M780 345 L780 460','evidence');
- s+=diagramArrow(id,'M730 605 L730 674 L170 674 L170 605','evidence');
- s+=diagramText(450,72,t('runoffArrow'),275,'middle')+diagramText(190,222,t('rechargeArrow'),185)+diagramText(381,196,t('exchangeArrow'),195)+diagramText(747,188,t('physicalOutputs'),140)+diagramText(793,402,t('findingsShort'),95)+diagramText(450,654,t('evidenceFeedback'),430,'middle');
- s+=box(50,40,240,120,'SWAT+',t('swatBox'));
- s+=box(610,40,240,120,'Taqsim',t('taqBox'));
- s+=box(330,235,240,110,'MODFLOW 6',t('mfBox'));
- s+=box(610,235,240,110,'Fishy',t('fishBox'),'evidence');
- s+=box(50,460,240,145,t('siteEvidenceShort'),t('methodDecisions'),'evidence');
- s+=box(355,460,220,145,t('suppliedCriteria'),t('targetsTimePlace'),'evidence');
- s+=box(610,460,240,145,t('monitorShort'),t('investigationShort'),'evidence');
- return diagramSvg(id,t('modelRoles'),s,t('rolesDiagramCaption'),725)+`<div class="legend"><span class="key" style="--key:#267693">→ ${t('flowArrow')}</span><span class="key evidence-key" style="--key:#795bb0">⇢ ${t('evidenceArrow')}</span></div>`;
+ let s='<rect width="900" height="1190" fill="#fcfdfb"/>';
+ // Blue interfaces follow the implemented Chu paths; the assessment chain is purple.
+ // Separate ports and corridors keep every edge attached without crossings.
+ s+=diagramArrow(id,'M310 155 L600 155');
+ s+=diagramArrow(id,'M600 235 L310 235');
+ s+=diagramArrow(id,'M260 280 L260 525 L340 525');
+ s+=diagramArrow(id,'M340 595 L140 595 L140 280');
+ s+=diagramArrow(id,'M720 280 L720 545 L580 545');
+ s+=diagramArrow(id,'M80 200 L40 200 L40 700 L460 700 L460 780','evidence');
+ s+=diagramArrow(id,'M290 855 L345 855','evidence');
+ s+=diagramArrow(id,'M580 855 L625 855','evidence');
+ s+=diagramArrow(id,'M175 1000 L175 930','evidence');
+ s+=diagramArrow(id,'M735 930 L735 1075 L310 1075','evidence');
+ s+=diagramText(455,131,t('chuAvailability'),275,'middle');
+ s+=diagramText(455,211,t('chuRealisedManagement'),275,'middle');
+ s+=diagramText(285,360,t('chuRechargeExchange'),235);
+ s+=diagramText(155,422,t('chuGroundwaterReturn'),95);
+ s+=diagramText(742,360,t('chuCanalRecharge'),145);
+ s+=diagramText(100,730,t('chuHydrographs'),330);
+ s+=diagramText(435,1015,t('evidenceFeedback'),260);
+ s+=box(80,100,230,180,'SWAT+',t('chuSwatBox'));
+ s+=box(600,100,230,180,'Taqsim',t('chuTaqBox'));
+ s+=box(340,475,240,160,'MODFLOW 6',t('chuMfBox'));
+ s+=box(60,780,230,150,t('suppliedCriteria'),t('targetsTimePlace'),'evidence');
+ s+=box(345,780,235,150,'Fishy',t('fishBox'),'evidence');
+ s+=box(625,780,220,150,t('monitorShort'),t('investigationShort'),'evidence');
+ s+=box(60,1000,250,150,t('siteEvidenceShort'),t('methodDecisions'),'evidence');
+ const chu='https://github.com/hydrosolutions/chu-swatplus/blob/429e42fef63a3856c06a44b2599306dd99ab2d1c/';
+ const sourceLinks=`<div class="exercise-links"><a href="${chu}docs/records/cm-1/cm1_step2_opening_contract_2026-09-01.md#L137" target="_blank" rel="noopener">${esc(t('chuInterfaceSource'))} ↗</a><a href="${chu}scripts/cm1_step3_coupled_base_run.py#L500" target="_blank" rel="noopener">${esc(t('chuCodeSource'))} ↗</a><a href="https://github.com/hydrosolutions/zarafshan-swatplus/blob/be19315cc3f4c7d5b51f2a6538a690e9df5b9985/docs/architecture.md#groundwater-pathway" target="_blank" rel="noopener">${esc(t('zarafshanArchitectureSource'))} ↗</a></div>`;
+ return diagramSvg(id,t('modelRoles'),s,t('rolesDiagramCaption'),1190)+`<div class="legend"><span class="key" style="--key:#267693">→ ${t('chuInterfaceLegend')}</span><span class="key evidence-key" style="--key:#795bb0">⇢ ${t('chuAssessmentLegend')}</span></div>`+sourceLinks;
 }
 function renderExtensions(){const e=C.catalogs[state.lang].extensionItems;$('extensions').innerHTML=`<p class="eyebrow">${t('extensions')}</p><h2>${t('modelRoles')}</h2>${modelRoles()}${p(t('extensionIntro'))}<div class="extension-grid">${e.map((item,i)=>`<details${i===4?' class="wide"':''}><summary>${esc(item.title)}</summary><div>${p(item.body)}</div></details>`).join('')}</div><div class="exercise-links">${link('guided.html','guided')}${link('assessment.html','assessment')}${link('playground.html','laboratory')}${link('index.html','large')}</div>`;}
 function renderSources(){const c=C.catalogs[state.lang];$('sources').innerHTML=`<p class="eyebrow">${t('sources')}</p><h2>${t('sources')}</h2>${p(t('sourcesNote'))}${details(t('detail'),`<div class="exercise-links"><a href="https://lex.uz/uz/docs/-7655343" target="_blank" rel="noopener">Uzbek Water Code · Art. 4, 122 ↗</a><a href="https://www.fedlex.admin.ch/eli/cc/1992/1860_1860_1860/en" target="_blank" rel="noopener">GSchG · Art. 31–33 ↗</a><a href="coverage-matrix.json">${t('capabilities')} ↗</a><a href="controlled-terms.json">${t('termRegistry')} ↗</a><a href="data/guided.json">guided-six-unit-synthetic-v1 · JSON</a><a href="data/guided-sharing.json">guided-sharing-synthetic-v1 · JSON</a></div>${p(t('capabilityNote'))}<p class="evidence-id">Appendix A: steps 1–12 · Appendix B: B.0–B.9 · Part IV: quality coupling · ${esc(C.terminologyVersion)}</p>`)}${p(t('termsNote'))}<dl>${c.glossary.map(g=>`<dt>${esc(g.term)}</dt><dd>${esc(g.meaning)}</dd>`).join('')}</dl>`;}
