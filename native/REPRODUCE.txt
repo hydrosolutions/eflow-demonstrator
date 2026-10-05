@@ -1,0 +1,85 @@
+Native guided dataset: reproducible evidence
+
+This directory contains the native model, independent integer oracle, actual Fishy adapter,
+shortfall replay, supervisor, frozen dependency lock and packaging script. No observed data
+or upstream source checkout is needed. uv.lock pins the declared upstream commits; these
+are the tested pinned versions, not a latest-main claim. No .venv is shipped.
+
+Run every command below from native/, with uv and Python 3.13 available. Relative evidence
+paths therefore resolve to implementation_v28/native_audit, outside the static app folder.
+Use a fresh evidence directory when reproducing; do not overwrite older admitted evidence.
+  uv sync --locked
+  uv run python -m pytest tests/test_guided_oracle.py -q
+
+1. Admit a small continuous/chunked pair before annual execution.
+Each native child must be supervised. The executable below is native/.venv/bin/python.
+  uv run python supervise.py --seconds 60 --output ../../native_audit/smoke-continuous -- .venv/bin/python run_guided.py --scenario normal-managed --start 150 --days 6 --chunk-days 6 --initial-storage-m3 5000000 --output ../../native_audit/smoke-continuous
+  uv run python supervise.py --seconds 60 --output ../../native_audit/smoke-chunked -- .venv/bin/python run_guided.py --scenario normal-managed --start 150 --days 6 --chunk-days 3 --initial-storage-m3 5000000 --output ../../native_audit/smoke-chunked
+
+Manual independent admission step (not automatically supplied by either command):
+- Require both supervisor.json files to report passed and both result.json files to cover
+  the same six dates. Compare series, saltMgL, criteria, deliverableM3s and balances exactly.
+- Compare ecological and issued findings: daily, rawFishy, shortfallM3s, shortfallDays and
+  shortfallVolumeM3. Chunk-specific provenance dependency IDs need not be identical.
+- Verify the first chunk's finalCounts equal the next chunk's initialCounts, the startIndex
+  advances from 150 to 153, and the complete native physical water/salt balances close.
+- Verify positive spill, canal delivery, consumption and return occur. The prefilled
+  5 Mm3 smoke exercises spill; it is NOT the annual initial state. Annual cases start at zero.
+- Record the reviewer, actual checks and SHA256 hashes of both result files in
+  ../../native_audit/chunk_admission.json, with status="passed" only after all checks pass.
+  This is a mandatory separately produced input to build_package.py; the package writer
+  does not perform or replace the independent admission. On a failed check, stop this stage.
+
+2. Run four annual cases, once each, after the small-trace admission.
+Example for normal-managed:
+  uv run python supervise.py --seconds 300 --output ../../native_audit/normal-managed -- .venv/bin/python run_guided.py --scenario normal-managed --days 365 --chunk-days 3 --output ../../native_audit/normal-managed
+Run the same command for normal-natural, dry-natural and dry-managed, changing both
+--scenario and both output-directory occurrences to the matching scenario ID.
+Total annual budget: 1,200 seconds; each case: 300 seconds and 2 GiB RSS. Track the sum of
+elapsedSeconds in the four supervisor.json files and do not start another case when the
+remaining budget is exhausted. The supervisor observes its one native Python child,
+including native Rust threads. The model launches no additional child process.
+Do not bypass limits, retry automatically, or relabel partial output as an annual result.
+
+3. Produce the two short evidence cases required by the package writer.
+Actual 10/7/5 native shortfall replay:
+  uv run python supervise.py --seconds 60 --output ../../native_audit/shortfall-v2 -- .venv/bin/python run_shortfall.py --output ../../native_audit/shortfall-v2
+Known zero-flow evidence, including undefined dry concentration:
+  uv run python supervise.py --seconds 60 --output ../../native_audit/zero-evidence -- .venv/bin/python verify_zero.py --output ../../native_audit/zero-evidence
+Require passed supervisors. The latter command writes zero-evidence/zero_admission.json;
+zero flow is valid delivery evidence against a positive criterion, not missing data.
+These three-day evidence cases are separate from the four annual scenarios.
+
+4. Package only completed, admitted inputs.
+Required files under ../../native_audit are:
+- Each of normal-natural/, normal-managed/, dry-natural/ and dry-managed/:
+  result.json and supervisor.json, with complete 365-day results and passed supervisors.
+- chunk_admission.json from the independent manual admission above.
+- shortfall-v2/result.json from the supervised native shortfall case.
+- zero-evidence/zero_admission.json from the supervised zero-flow evidence case.
+Retain the corresponding models, native run/physical files and logs as supporting evidence.
+  uv run python build_package.py --audit ../../native_audit --output ../data
+  uv run python -m pytest tests -q
+
+Reproduction equality concerns quantized physical values, forcing/criterion arrays,
+model content and Fishy findings. Runtime, absolute paths and wall-clock diagnostic
+metadata need not be byte-identical. Repeating the continuous smoke command into a new
+output directory provides a bounded CLI reproduction check; compare the physical arrays,
+criteria, findings and native model/run digests with its original admitted counterpart.
+The package writer requires the source hash used by each annual execution to match current
+guided_model.py. A source edit invalidates that admission; never relabel old results as
+generated by changed code.
+
+Natural configuration keeps the 5% mixed natural-exchange sink and explicitly replaces
+S1 with a memoryless natural channel. It has zero withdrawals, consumption and returns;
+inactive bookkeeping links exist only to stabilize the computational schema. It omits
+natural storage/GW/travel-time rather than claiming these were reconstructed. The new
+100-year reference is analytically routed through that declared memoryless model.
+Normal and 40%-dry native years independently check its stated transformation.
+
+The quantity schedule is an annual 75% exceedance component for a 50% design class,
+not the completed report baseline method. It omits risk/winter/spawning/quality limbs.
+The same frozen schedule enters managed release policy and the Fishy ecological criterion.
+Issued instruction is prospective min(ecological schedule, conditional same-day capacity
+from current reservoir/inflow/return after committed abstraction), not a sustainable
+basin optimum. Actual flow may exceed the instruction due to spill or return.

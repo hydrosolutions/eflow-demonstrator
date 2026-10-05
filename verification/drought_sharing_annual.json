@@ -1,0 +1,27 @@
+{
+  "status": "native_annual_science_passed_ui_and_package_pending",
+  "reviewer": "demo_method_review",
+  "scenario": "dry-managed-sharing",
+  "days": 365,
+  "chunks": 122,
+  "rawBalanceRowsChecked": 6570,
+  "checks": [
+    "All native day/node/basin water and salt inventories close exactly",
+    "All native daily diversions, returns, consumption, R2a/R2b and salt masses independently match declared roundedcap arithmetic",
+    "Every chunk initial water/salt inventory equals preceding final inventory",
+    "Published result counts equal raw physical counts; unchanged parent forcing and ecological schedule",
+    "Actual Fishy ecological365shortfalls; issued0shortfalls"
+  ],
+  "totalsM3": {
+    "grossDiversion": 10048760.0,
+    "consumption": 5024380.0,
+    "ecologicalShortfall": 49055928.0
+  },
+  "sourceSha256": "12127c17f32e28724d9e1d63290f9549f77a7ccd2cd64ca8e1c2812d332dff87",
+  "limits": [
+    "122 stitched native chunks; not a continuous annual performance claim",
+    "Synthetic up-to20% gross irrigation cap, downwards2m3 daily rounding; not a policy recommendation",
+    "Same-day conditional issued instruction after committed diversion; not global allocation optimum",
+    "No inferred ecological status, legal fault, all-sector needs or safety-floor adequacy"
+  ]
+}

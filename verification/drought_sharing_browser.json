@@ -1,0 +1,45 @@
+{
+  "status": "rendered_browser_checks_passed_download_receipt_unverified",
+  "date": "2026-10-04",
+  "reviewer": "root actual in-app browser",
+  "checks": [
+    "Dry ecology-first overlap disclosed",
+    "Sharing choice shows three curves and correct diversion/consumption/return accounting",
+    "Unchanged ecological schedule versus prospective sharing instruction and actual delivery",
+    "Annual ecological deficit 49.06 versus 44.03 million m3",
+    "Normal forcing visibly resets policy and disables sharing",
+    "Dry sharing scenario survives reload",
+    "Displayed JSON contains sharing dataset, scenario and separate criterion versions",
+    "Final rule chart styles distinguish coincident issued/actual curves and label conditional deliverability"
+  ],
+  "screenshots": [
+    "sharing_comparison.jpg",
+    "sharing_rule.jpg"
+  ],
+  "cacheRepair": "Observed old cached engine G.resolveData error resolved with versioned asset URLs; no subsequent errors in captured console log. Historical errors remain in log.",
+  "downloadReceipt": "Unverified: prior two attempts did not expose completed downloads; not retried. Inspectable JSON content checked separately.",
+  "tests": {
+    "command": "node --test tests/*.cjs",
+    "passed": 43,
+    "failed": 0
+  },
+  "frozenOriginalHashesVerified": [
+    "data/guided.json",
+    "data/guided-data.js",
+    "native/guided_model.py",
+    "native/run_guided.py",
+    "native/build_package.py",
+    "native/uv.lock"
+  ],
+  "hashes": {
+    "guided.html": "36f19d4aa292e1eb866ac17e2645f4f53453c87be543635b2afb03a04159a572",
+    "guided.js": "b78aa97091e3497cc7d7b62046f9bc09673172e8808a3528b549b567d3460138",
+    "guided-engine.js": "9430efc2eb3f71f4e70d2ecd991679a53198967983e8aa1ed8ce521479303bec",
+    "data/guided-sharing.json": "3cda18004281eb7625588148aa4c832d80b3abf540cd429c6e0ef1cd14f8e4cc"
+  },
+  "evidenceHashes": {
+    "browser_record.json": "ade08b4e1de32d86f8a4c875bda538091c5b049079e34c978dd2f5ace42351cb",
+    "sharing_comparison.jpg": "02bdb0364123e5386ba9568ca7e56c5f794e894142defd1c15b69188a8dad926",
+    "sharing_rule.jpg": "8e200ce9edc5eb6a426d5a57d063d70d892ad7d4e711e0d1f09b7e2f28185fbb"
+  }
+}

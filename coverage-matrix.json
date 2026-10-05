@@ -1,0 +1,139 @@
+{
+  "source": "appendix_computational_requirements.qmd \u2014 C.2 Checks for the nineteen required functions",
+  "scope": "Teaching coverage, not certification of operational capabilities",
+  "items": [
+    {
+      "number": 1,
+      "concept": "Spatial mapping",
+      "placement": "core",
+      "learningLocation": "EX1",
+      "limit": "Fictional boundaries; not adopted plan or controlpoint"
+    },
+    {
+      "number": 2,
+      "concept": "Water accounting",
+      "placement": "core",
+      "learningLocation": "EX3",
+      "limit": "Supplied one-day ledger and savednative balance; notfullbasin"
+    },
+    {
+      "number": 3,
+      "concept": "Individual salt budgets",
+      "placement": "extension",
+      "learningLocation": "EX5",
+      "limit": "One conservative constituent; no complete chemicalinventory"
+    },
+    {
+      "number": 4,
+      "concept": "Natural daily reconstruction",
+      "placement": "core",
+      "learningLocation": "EX2 / savedcomparison",
+      "limit": "Synthetic reference; not two accepted realworld reconstructions"
+    },
+    {
+      "number": 5,
+      "concept": "Glacier contribution",
+      "placement": "limitation",
+      "learningLocation": "modelroles",
+      "limit": "Explained role; no simulatedglacierdepletion"
+    },
+    {
+      "number": 6,
+      "concept": "Branches and return routes",
+      "placement": "core",
+      "learningLocation": "EX3 / savedcomparison",
+      "limit": "Return routing under stated assumptions"
+    },
+    {
+      "number": 7,
+      "concept": "Statistical adequacy",
+      "placement": "core",
+      "learningLocation": "EX2",
+      "limit": "Synthetic record; no observedrecordacceptance"
+    },
+    {
+      "number": 8,
+      "concept": "Lookup table",
+      "placement": "core",
+      "learningLocation": "EX2entry",
+      "limit": "Fictional table; not adoptedSwiss/Uzbekstatutorycurve"
+    },
+    {
+      "number": 9,
+      "concept": "Ecological assembly",
+      "placement": "core",
+      "learningLocation": "EX2baseline",
+      "limit": "Partial seasonal component; remaininglimbs pending"
+    },
+    {
+      "number": 10,
+      "concept": "Canal conveyance",
+      "placement": "extension",
+      "learningLocation": "canal",
+      "limit": "Supplied rectangular hydraulic example; notiterative sitevalidation"
+    },
+    {
+      "number": 11,
+      "concept": "Traceability",
+      "placement": "core",
+      "learningLocation": "EX6export",
+      "limit": "Versioned teachingrecords"
+    },
+    {
+      "number": 12,
+      "concept": "Independent check balance",
+      "placement": "core",
+      "learningLocation": "EX6",
+      "limit": "Concept and evidencegates; no independent fieldmeasurements"
+    },
+    {
+      "number": 13,
+      "concept": "Separate findings",
+      "placement": "core",
+      "learningLocation": "EX6",
+      "limit": "Suppliedcriteria and uncertainty; noofficialcompliance"
+    },
+    {
+      "number": 14,
+      "concept": "Scenario comparison",
+      "placement": "core",
+      "learningLocation": "EX3 / EX4",
+      "limit": "Saved synthetic choices; notoptimisation"
+    },
+    {
+      "number": 15,
+      "concept": "Flow alteration",
+      "placement": "extension",
+      "learningLocation": "savedbasin",
+      "limit": "Physicalmetrics not biologicalrecovery/status"
+    },
+    {
+      "number": 16,
+      "concept": "Habitat",
+      "placement": "extension",
+      "learningLocation": "EX2top",
+      "limit": "Hypotheticalhabitatelement notcalibratedstudy"
+    },
+    {
+      "number": 17,
+      "concept": "Groundwater",
+      "placement": "limitation",
+      "learningLocation": "modelroles / wetland",
+      "limit": "Exchangeconcept explained; nocoupledMODFLOWrun"
+    },
+    {
+      "number": 18,
+      "concept": "Salt transport / quality flow",
+      "placement": "extension",
+      "learningLocation": "EX5 / savedbasin",
+      "limit": "Mixing/transport doesnotactivate five-gatedqualityflow"
+    },
+    {
+      "number": 19,
+      "concept": "Release temperature",
+      "placement": "extension",
+      "learningLocation": "savedbasin",
+      "limit": "External thermaldiagnostics notvalidatedstratifiedoutletmodel"
+    }
+  ]
+}
