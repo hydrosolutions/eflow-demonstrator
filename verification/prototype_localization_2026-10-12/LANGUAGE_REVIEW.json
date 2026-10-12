@@ -1,0 +1,86 @@
+{
+  "reviewer": "Independent semantic review agent",
+  "review_date": "2026-10-12",
+  "scope": "All catalog rows in Russian and Uzbek Latin reviewed against English meaning, controlled-terms.json, live report Appendix B/B9, held Uzbek Code Articles 4/122 in Russian and Uzbek, and original Hayes 2025 paper. Dynamic runtime coverage and visual layout are separate root checks.",
+  "limitations": "Agent semantic/terminology review, not professional translation approval, native-speaker certification or legal certification. No later legislation amendments checked.",
+  "initial_catalog_sha256": "a8fd254fada2af3dd693e478a1f0e30a88b8c58a5abae84cd4e68d871642ead5",
+  "initial_rows_reviewed": 266,
+  "checks": [
+    "Water body, reach and calculation section remain distinct.",
+    "Natural/reference and actual/modelled delivery remain distinct.",
+    "Ecological target, operating instruction and delivered water remain distinct.",
+    "Exceedance classes are not allocation percentages.",
+    "Proposed full review remains within five years.",
+    "Source habitat percentages do not certify local habitat/status.",
+    "No official requirement, ecological status or fault conclusion is introduced.",
+    "No claim of official or professional translation approval."
+  ],
+  "findings": [
+    {
+      "id": "L1",
+      "severity": "required",
+      "source_key": "Snow trout study",
+      "observed_ru": "Исследование османа",
+      "observed_uz": "Qor foreli tadqiqoti",
+      "reason": "Unsupported common-name substitution. Hayes paper identifies Schizothorax eurycephalus; retaining genus avoids introducing another taxon.",
+      "requested_fix": "Use Исследование Schizothorax / Schizothorax tadqiqoti; update long provenance paragraph consistently and state full species in source detail.",
+      "status": "resolved",
+      "resolution_verified": true
+    },
+    {
+      "id": "L2",
+      "severity": "required",
+      "source_key": "E-flow",
+      "observed_ru": "Эко-сток",
+      "observed_uz": "Ekologik oqim",
+      "reason": "Invented abbreviation drops regime meaning and departs project controlled labels.",
+      "requested_fix": "Use Экологический режим стока / Ekologik oqim rejimi.",
+      "status": "resolved",
+      "resolution_verified": true,
+      "resolution": "E-flow is retained unchanged as the product brand in every language, removing unsupported translated abbreviation. The scientific document title uses the full controlled regime label in both languages. Accepted brand-only exception."
+    },
+    {
+      "id": "L3",
+      "severity": "required",
+      "source_key": "Candidate and all candidate-containing phrases",
+      "observed_ru": "Кандидат",
+      "observed_uz": "Nomzod",
+      "reason": "Literal person-candidate label is unclear for proposed numerical flow target.",
+      "requested_fix": "Use Расчётная цель / Hisobiy maqsad with grammatical inflections consistently.",
+      "status": "resolved",
+      "resolution_verified": true
+    },
+    {
+      "id": "L4",
+      "severity": "required",
+      "source_key": "wetland and wetland-containing phrases",
+      "observed_uz": "suv-botqoq hududi",
+      "reason": "Requested Code-grounded vocabulary; held Article 122 uses suvli-botqoq yerlar.",
+      "requested_fix": "Use suvli-botqoq yerlar with context-appropriate suffixes throughout.",
+      "status": "resolved",
+      "resolution_verified": true
+    },
+    {
+      "id": "L5",
+      "severity": "required",
+      "source_key": "Illustrative graduated curve → minimum and detailed Swiss explanation",
+      "observed_ru": "ступенчатая кривая",
+      "observed_uz": "bosqichli egri chiziq",
+      "reason": "Could imply discontinuous step function, while English means graduated conversion curve.",
+      "requested_fix": "Use градуированная кривая / darajalangan egri chiziq.",
+      "status": "resolved",
+      "resolution_verified": true
+    }
+  ],
+  "result": "pass_after_corrections",
+  "final_catalog_sha256": "f778b4a02aa0be92e17bc5efdeb057fee78ac2712a266c9d950ad11dce09e87c",
+  "final_rows_reviewed": 269,
+  "final_checks": {
+    "all_rows_semantically_reviewed": true,
+    "placeholder_multisets_match_all_rows": true,
+    "five_year_review_preserved": true,
+    "source_species_verified_in_original_Hayes_PDF": "Schizothorax eurycephalus; abstract and habitat section",
+    "unresolved_required_findings": 0
+  },
+  "additional_recheck": "Checked four Uzbek calculation-target phrases for redundant replacement grammar; all corrected. Read all appended dynamic/state phrases and source species sentence."
+}
