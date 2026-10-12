@@ -1,0 +1,276 @@
+{
+  "reviewer": "/root/rovad_data_audit",
+  "date": "2026-10-12",
+  "status": "admitted",
+  "scope": "Actual native allocation-priority numerical artifacts and section traffic-light helper; browser rendering remains parent gate.",
+  "independent_python_artifact_tests": {
+    "passed": 11,
+    "failed": 0,
+    "seconds": 1.04
+  },
+  "independent_actual_status_test": {
+    "passed": 1,
+    "combinations": 576
+  },
+  "independently_rerun_section_helper_tests": 7,
+  "native_application_witness_tests_reviewed": 9,
+  "unique_annual_cases": 16,
+  "annual_days_each": 365,
+  "aggregate_seconds": 208.73554029199295,
+  "max_case_seconds": 14.318661791970953,
+  "max_peak_rss_bytes": 90161152,
+  "physical_readback": {
+    "physical_chunks": 1952,
+    "native_balance_records": 105120,
+    "inventory_samples": 46720,
+    "section_daily_comparisons": 11680
+  },
+  "exact_balances": "all native water/inert balance records and independent daily/annual water closure equal zero residual",
+  "explicit_reused_profile_records_verified": 10,
+  "sources_frozen_unchanged": true,
+  "old_artifacts_unchanged_sha256": {
+    "comparison.json": "da35690dda67a89283e7c18a78e72905b30ea8a883e4e9667f6610ce2bb63170",
+    "targets.json": "31df113323d8449001fc1996ee748605bd661d25346f4bb250648049ad4aac1a",
+    "koksu_forcing.csv": "7913d0e2aff173b281c1f8c249c90e9bc7d67c754de512f2e23e9d754a998efb",
+    "stress-comparison.json": "8aa45a1370e6f4c50167886a11f54dc777f2bbd7801fdb7fb484f2f0ccdbf5cc",
+    "stress-targets.json": "df41cf640fd869776bf8c5efa01e859c234b8e1e7dc70de912bf153e3ab437cc"
+  },
+  "output_sha256": {
+    "comparison-ecology.json": "72d677a1f721adcdf999fa5748f112e954d12a992c1be9d87d0a4cd629134ce0",
+    "comparison-irrigation.json": "7037caba6f2620bb9d35b3571ac5a10c4b2b2f852da1aae0d2a9e8ffbdce599e",
+    "comparison-stress-ecology.json": "77089535aaa036576ad410885449aa5aed956b6a3a18c7a8fa12be70ac5f85ba",
+    "comparison-stress-irrigation.json": "0fda9710f2379065fee1cbea1df89d203be4fcb6731b39fd77c098f006a243f3"
+  },
+  "test_sha256": {
+    "tests/test_independent_artifacts.py": "7db8372d1bdd7fe148ab745e5e9a8a473bded32a5fd4239a3bf8ab89202d1645",
+    "tests/test_status_artifacts.cjs": "665390a3903975bea220de6402a241ec86c3c3949fe6d3e39a63b4f5bb4eb08a",
+    "tests/test_flow_status_r2a.cjs": "20b3f74f3774aaab6552a5081d2092476922ea80b44faabc528556812ebd6a6d"
+  },
+  "source_manifest_sha256": "5c2b9b41262bf547e6ae19a831a9a0b7ca373f463a63c59d5ca71b2e68b2990d",
+  "flow_status_sha256": "b6d7e7b1e8bee4b52fa0a74fcf61ff8aad16a3bacfac6918a6ac774be74011e1",
+  "examples": {
+    "comparison-ecology.json": {
+      "normal": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 32307454.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 8474494.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 33133438.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 14957804.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 4308610.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 17283632.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      }
+    },
+    "comparison-irrigation.json": {
+      "normal": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 35534358.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 167,
+          "R2a_issued_shortfall_days": 167,
+          "R2b_candidate_shortfall_days": 156,
+          "R2b_issued_shortfall_days": 156,
+          "irrigation_diversion_m3": 35534358.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 35534358.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 136,
+          "R2a_issued_shortfall_days": 136,
+          "R2b_candidate_shortfall_days": 3,
+          "R2b_issued_shortfall_days": 3,
+          "irrigation_diversion_m3": 24644810.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 185,
+          "R2a_issued_shortfall_days": 185,
+          "R2b_candidate_shortfall_days": 179,
+          "R2b_issued_shortfall_days": 179,
+          "irrigation_diversion_m3": 24644810.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 65,
+          "R2a_issued_shortfall_days": 65,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 24644810.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      }
+    },
+    "comparison-stress-ecology.json": {
+      "normal": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 32307454.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 8474494.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 33133438.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 14957804.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 365,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 365,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 0.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 17283632.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      }
+    },
+    "comparison-stress-irrigation.json": {
+      "normal": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 35534358.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 167,
+          "R2a_issued_shortfall_days": 167,
+          "R2b_candidate_shortfall_days": 156,
+          "R2b_issued_shortfall_days": 156,
+          "irrigation_diversion_m3": 35534358.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 0,
+          "R2a_issued_shortfall_days": 0,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 35534358.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2a_candidate_shortfall_days": 136,
+          "R2a_issued_shortfall_days": 136,
+          "R2b_candidate_shortfall_days": 3,
+          "R2b_issued_shortfall_days": 3,
+          "irrigation_diversion_m3": 24644810.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "kazakh": {
+          "R2a_candidate_shortfall_days": 365,
+          "R2a_issued_shortfall_days": 219,
+          "R2b_candidate_shortfall_days": 365,
+          "R2b_issued_shortfall_days": 219,
+          "irrigation_diversion_m3": 24644810.0,
+          "irrigation_request_m3": 36302008.0
+        },
+        "site": {
+          "R2a_candidate_shortfall_days": 65,
+          "R2a_issued_shortfall_days": 65,
+          "R2b_candidate_shortfall_days": 0,
+          "R2b_issued_shortfall_days": 0,
+          "irrigation_diversion_m3": 24644810.0,
+          "irrigation_request_m3": 36302008.0
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Monthly-derived synthetic forcing and assumed dry scaling; calendar codes are not observed years.",
+    "Same candidate at R2a/R2b and pre-diversion instruction are explicit illustrative assumptions; no adopted legal instruction.",
+    "Flow-delivery findings do not establish ecological status or blame.",
+    "Stored water is excluded from the common instruction; it can buffer actual releases without redefining the instruction.",
+    "No browser rendering verification by this reviewer."
+  ]
+}

@@ -1,5 +1,9 @@
 # E-flow workshop demonstrator
 
+For the current methodology presentation, open **[prototype/](prototype/)**. It compares illustrative method components using saved Taqsim/Fishy calculations, shows allocation priorities and separate river-section traffic lights, and records pending assessment evidence. See [prototype/README.md](prototype/README.md) for scope, sources and verification. This current prototype is English; the multilingual learning pages below are a separate earlier interface.
+
+## Earlier learning and guided interfaces
+
 Start with **[learn.html](learn.html)** for the self-guided learning path in English, Russian and Uzbek Latin. Six illustrated exercises explain assessment objects, compare Q347-style/Kazakh/habitat methods, allocate a simple river account, compare drought outcomes, separate quantity from quality, and interpret evidence in a planning record. Each includes a prediction, explanation and retry. The short orientation targets 20 minutes; allow 45–60 minutes for full practice. These are estimates, not measured learner completion times.
 
 The versioned [terminology registry](controlled-terms.json) distinguishes held source-exact wording from provisional translations; it is not certified translation or institutional approval. The [coverage matrix](coverage-matrix.json) records which report capabilities are illustrated and which remain outside the demonstrator.
@@ -8,7 +12,7 @@ The earlier **[guided.html](guided.html)** remains the detailed saved R2b walkth
 
 Tobi’s actual Zarafshan SWAT+/MODFLOW6/Taqsim/Fishy modelling is a separate workstream in progress, as reported by the project lead. This app explains conceptual model roles; it does not connect to, test or certify that basin implementation.
 
-All public inputs are synthetic. This is a static replay of saved native calculations, with small explicitly labelled browser teaching calculations. It does not run Taqsim or Fishy live, make official designations, adopt a national prescription or determine ecological status. Native calculation provenance, bounded-run outcomes and reproduction instructions are supplied with `native/` and `data/guided.json`. A missing/unadmitted native result is shown as pending, never replaced by made-up output.
+The earlier learning/guided inputs are synthetic. The current prototype combines an approximately digitized published Koksu curve and published baseflows with explicitly assumed scenarios. This is a static replay of saved native calculations, with small explicitly labelled browser teaching calculations. It does not run Taqsim or Fishy live, make official designations, adopt a national prescription or determine ecological status. Native calculation provenance, bounded-run outcomes and reproduction instructions are supplied with `native/` and `data/guided.json`. A missing/unadmitted native result is shown as pending, never replaced by made-up output.
 
 Current implementation review is summarized in `verification/learning_2026-10-04.json`; the earlier review remains in `verification/REVIEW_OUTCOME.txt`. Independent simulated learner/scientific and language reviews informed this update. Actual JSON and readable-card downloads from the new learning portal were received and opened in all three languages, with identical numerical results. **Draft release check:** legacy guided-page download receipt remains unconfirmed in the in-app browser after a compatibility repair. The exact record remains inspectable on screen; check those legacy downloads in the standard workshop browser before release.
 
