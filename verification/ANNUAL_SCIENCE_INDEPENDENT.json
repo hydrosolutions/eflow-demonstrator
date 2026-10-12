@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "nativeScenarioDays": 1460,
+  "nativeChunks": 488,
+  "exactNodeAndBasinWaterSaltRows": 26280,
+  "actualVsPublished": "All8flow arrays,storage and5saltconcentration arrays matched actual native physical samples for every day",
+  "nativeZeroCase": "3days numerical zero flow retained; concentration null; ecological positive criterion shortfall, zero issued criterion met; no ecological adequacy claim",
+  "resultSha256": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+  "modelSha256": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df"
+}

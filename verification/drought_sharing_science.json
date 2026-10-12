@@ -1,0 +1,35 @@
+{
+  "status": "science_and_application_tests_passed_browser_and_release_pending",
+  "reviewer": "demo_method_review",
+  "nativeReview": "ANNUAL_INDEPENDENT.json",
+  "tests": {
+    "command": "node --test tests/*.cjs",
+    "passed": 43,
+    "failed": 0,
+    "newIndependentApplicationTests": 5
+  },
+  "originalFrozenHashesUnchanged": [
+    "data/guided.json",
+    "data/guided-data.js",
+    "native/guided_model.py",
+    "native/run_guided.py",
+    "native/build_package.py",
+    "native/uv.lock"
+  ],
+  "actualNativeToAddon": "all physical arrays, dates, salt, deliverability and Fishy daily findings/versions exact",
+  "hashes": {
+    "data/guided-sharing.json": "3cda18004281eb7625588148aa4c832d80b3abf540cd429c6e0ef1cd14f8e4cc",
+    "data/guided-sharing.js": "a0e941088152b336450874dc4ddc49774b457fa4a23f2b4d0d6efced997faea5",
+    "guided-engine.js": "9430efc2eb3f71f4e70d2ecd991679a53198967983e8aa1ed8ce521479303bec",
+    "tests/test_sharing_application.cjs": "ea73001ac31b5e7c295ecfcc204244f83946f390329abc15e8b73cdb769a4f90",
+    "native/sharing_model.py": "12127c17f32e28724d9e1d63290f9549f77a7ccd2cd64ca8e1c2812d332dff87"
+  },
+  "counterfactual": "Frozen parent natural and priority scenarios share exact forcing, natural sink, reference and ecological schedule. Runtime rejects mismatching these scientific joins; parent fingerprint recorded/format checked in browser and actual bytes hash independently checked here. No browser cryptographic authenticity claim.",
+  "interpretation": "Illustrative gross irrigation diversion10.04876Mm3 yields5.02438Mm3 return and5.02438Mm3 consumption; same amount adds to downstream ecological deficit. Eco shortfall49.055928Mm3,365days; issued shortfall0. This is conditional after diversion, not ecological adequacy or an allocation recommendation.",
+  "limits": [
+    "First annual failed a1L exact gate and is preserved; repaired declared cap rounds downward2m3/day, not a tolerance relaxation",
+    "365days are122stitched native chunks, not continuous annual runtime acceptance",
+    "No other sector, protected floor, ecological status or legal fault established",
+    "Root browser review and download-file receipt status must be stated separately; no download success claimed here"
+  ]
+}

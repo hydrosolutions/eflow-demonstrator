@@ -1,0 +1,77 @@
+Additive drought-sharing native replay
+
+Run commands from native/. The original guided_model.py, guided.json and guided-data.js
+remain immutable. sharing_model.py imports their admitted scalar constants, forcing and
+unchanged natural-loss, irrigation and reservoir rules; it does not monkeypatch them.
+Its separate model/Fishy adapter records the new scenario and issued-policy identity.
+The parent ecological schedule retains guided-policy-v1. The sharing instruction uses
+guided-sharing-20pct-v1 and the dataset is guided-sharing-synthetic-v1.
+
+Policy and numerical representation
+Offer at most 20% of the river after the retained 5% natural exchange, limited by the
+existing seasonal request and actual available water. The offered cap is rounded DOWN
+to whole 2 m3/day before native execution. Thus cap reduction is less than 2 m3/day;
+the rule never exceeds 20%. Half the actual irrigation diversion is consumed, half
+returns on the same day, carrying all diverted salt. The same original synthetic drought,
+reference, ecological target, reservoir and spatial mapping remain in use. No domestic
+or industrial demand or protected-use ranking is represented. This is an illustrative
+allocation comparison, not an adopted priority, recommended percentage or safety floor.
+
+The prospective cap is derived from the hashed frozen source forcing; changing that
+forcing requires regeneration and admission. Native execution also checks actual water
+availability. Every actual inflow and transfer is independently checked in integer litres;
+no tolerance hides changes in the quantized policy. Ecological and issued findings are
+separate. A met instruction does not erase ecological deficit.
+
+One initial annual attempt exposed a one-litre difference at day index94 when using a
+dynamic real-valued divide-by-five branch directly. Native balances still closed, but the
+exact intended-policy oracle rejected the result. The failed source and physical evidence
+are preserved in the audit's failed-attempt-01.zip. The downward whole-2m3 cap is the
+explicit representation repair, independently admitted before the second/final annual
+attempt. Old results were not rewritten. The admitted output folder's attempt-02 suffix
+records this history; reproducing the final implementation needs only one fresh run.
+
+Prerequisites
+  uv sync --locked
+  uv run python -m pytest tests/test_sharing.py::test_drought_sharing_serves_demand_without_changing_ecological_need -q
+Use a fresh evidence location for reproduction; never overwrite older sealed evidence.
+All paths below are relative to native/. Every child has the 2 GiB RSS ceiling enforced
+by supervise.py; it monitors the single Python process including native Rust threads.
+
+Small application admission before annual execution (at most60seconds each):
+  uv run python supervise.py --seconds 60 --output ../../drought_sharing_2026-10-04/native_audit/repair-smoke-continuous -- .venv/bin/python run_sharing.py --start 80 --days 16 --chunk-days 16 --output ../../drought_sharing_2026-10-04/native_audit/repair-smoke-continuous
+  uv run python supervise.py --seconds 60 --output ../../drought_sharing_2026-10-04/native_audit/repair-smoke-chunked -- .venv/bin/python run_sharing.py --start 80 --days 16 --chunk-days 3 --output ../../drought_sharing_2026-10-04/native_audit/repair-smoke-chunked
+
+Independently compare actual series, saltMgL, criteria, deliverableM3s and balances exactly;
+compare all ecological/issued Fishy daily findings, shortfall arrays/volumes and criterion
+versions. Check every native water/salt balance and complete chunk state/date handoffs.
+The window includes zero demand, request-limited and share-limited allocation, and former
+failure day94. At day94 actual C1 must be exactly34,974,000litres under the declared cap.
+Record checks and file SHA256s in native_audit/repair_chunk_admission.json. A separate
+reviewer must admit the actual evidence in REPAIR_SMOKE_INDEPENDENT.json in its parent
+folder. Neither command automatically creates or substitutes that independent review.
+The prior base-network prefilled-storage equivalence remains supporting evidence for
+the unchanged reservoir rule; this drought case has zero reservoir storage throughout.
+
+One annual execution of the admitted final variant (at most300seconds/2GiB):
+  uv run python supervise.py --seconds 300 --output ../../drought_sharing_2026-10-04/native_audit/dry-managed-sharing-attempt-02 -- .venv/bin/python run_sharing.py --days 365 --chunk-days 3 --output ../../drought_sharing_2026-10-04/native_audit/dry-managed-sharing-attempt-02
+Do not retry or increase budgets automatically on failure. Preserve diagnostics and report
+an incomplete result. Each annual run consists of122 bounded native intervals with full
+water/salt state and absolute-date forcing carryover; it is not a continuous native year.
+
+Packaging prerequisites:
+- The unchanged parent ../data/guided.json and imported guided_model.py.
+- native_audit/dry-managed-sharing-attempt-02/result.json and supervisor.json, both passed.
+- native_audit/repair_chunk_admission.json, produced by actual comparisons above.
+- REPAIR_SMOKE_INDEPENDENT.json, the separately recorded independent smoke admission.
+Retain native model.json, run.json, physical.json, oracle.json and logs outside the static
+app as developer evidence. The package writer checks current and imported source hashes,
+parent dates/forcing/need and actual balance/Fishy versions; it does not replace the
+independent scientific review of the final annual result.
+  uv run python build_sharing_package.py --audit ../../drought_sharing_2026-10-04/native_audit --parent ../data/guided.json --output ../data
+  uv run python -m pytest tests/test_sharing.py -q
+
+For a bounded CLI reproduction check, repeat the16day continuous smoke into another fresh
+folder and compare exact physical/criterion/Fishy arrays and native model/run digests.
+Runtime, absolute paths and diagnostic timestamps are not scientific reproducibility
+criteria. No extra annual run is necessary to perform this check.

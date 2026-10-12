@@ -1,0 +1,1354 @@
+{
+  "schemaVersion": "eflow-controlled-terms/1",
+  "version": "2026-10-04-provisional-1",
+  "languages": [
+    "en",
+    "ru",
+    "uz-Latn"
+  ],
+  "approval": "No official terminology or legal approval claimed. Professional language review remains pending.",
+  "sourcePrecedence": "Live report meaning; official Uzbek Code for Code terms; WMO B9 for the twelve exact Russian hydrological labels. Draft Пакет 7272 is not binding law.",
+  "orthography": {
+    "uz-Latn": "Display catalogs normalize the o/g apostrophe to Unicode U+02BB (oʻ/gʻ); other Uzbek apostrophes retain their distinction. Held source-exact legal labels are copied unchanged. UTF-8 exports retain these characters."
+  },
+  "sources": {
+    "report-appendix-b": {
+      "path": "docs/eflow_report/report/appendices.qmd",
+      "sha256": "836df589b3cbea95f0e7372ce2a6a992ff8fbce3d246768fc7c53d8bc3d73be1",
+      "section": "Appendix B — Controlled vocabulary",
+      "authority": "Live project report; proposed method, not an enacted implementing instrument"
+    },
+    "wmo-b9": {
+      "path": "docs/eflow_report/report/appendices.qmd",
+      "sha256": "836df589b3cbea95f0e7372ce2a6a992ff8fbce3d246768fc7c53d8bc3d73be1",
+      "section": "B.9 Hydrological terms — authoritative EN ↔ RU (WMO-385)",
+      "authority": "Twelve bilingual WMO No. 385 pairs reproduced in the live report; not a complete dictionary"
+    },
+    "uz-code-2025": {
+      "path": "docs/eflow_report/references/uz_water_code_2025_uz.txt",
+      "sha256": "44a4273f7ea51514f17630e7671867a10725864ec337a996de62edef5ed7daed",
+      "url": "https://lex.uz/uz/docs/-7655343",
+      "section": "4-modda. Asosiy tushunchalar; 122-modda. Sanitariya va ekologik maqsadlarda suv chiqarish",
+      "authority": "Held official Uzbek Latin Code text; no claim of checking later amendments"
+    }
+  },
+  "terms": [
+    {
+      "id": "water-body",
+      "labels": {
+        "en": "Water body",
+        "ru": "Водный объект",
+        "uz-Latn": "suv obyekti"
+      },
+      "allowedShortLabel": {
+        "en": "Water body",
+        "ru": "Водный объект",
+        "uz-Latn": "suv obyekti"
+      },
+      "definition": "Physical/legal water object, natural or artificial, existing independently of whether a basin plan has assigned a planning unit.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Water body"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "source-exact",
+          "source": "uz-code-2025",
+          "rationale": "Exact label in held official Uzbek Latin Code"
+        }
+      },
+      "prohibitedConflations": [
+        "plan unit",
+        "calculation section",
+        "network junction"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "plan-unit",
+      "labels": {
+        "en": "Plan unit",
+        "ru": "Плановая единица",
+        "uz-Latn": "Reja birligi"
+      },
+      "allowedShortLabel": {
+        "en": "Plan unit",
+        "ru": "Плановая единица",
+        "uz-Latn": "Reja birligi"
+      },
+      "definition": "Administrative unit identified in an adopted basin plan for objectives/status. May contain one or more technical reaches; unassigned is not absence of the physical water body.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Plan unit"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "water body identity",
+        "a model node"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "reach",
+      "labels": {
+        "en": "Reach",
+        "ru": "Расчётный участок",
+        "uz-Latn": "Hisob uchastkasi"
+      },
+      "allowedShortLabel": {
+        "en": "Reach",
+        "ru": "Расчётный участок",
+        "uz-Latn": "Hisob uchastkasi"
+      },
+      "definition": "Method calculation unit delineated by relevant breakpoints and plan-unit boundaries. Several model links can represent one water body.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Reach"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "plan unit by default",
+        "junction point"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "calculation-section",
+      "labels": {
+        "en": "Calculation section",
+        "ru": "Расчётный створ",
+        "uz-Latn": "Hisob kesimi"
+      },
+      "allowedShortLabel": {
+        "en": "Calculation section",
+        "ru": "Расчётный створ",
+        "uz-Latn": "Hisob kesimi"
+      },
+      "definition": "Physical section to which a calculation attaches; designation as legal control point is a separate fact.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Calculation section"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "control point automatically"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "control-point",
+      "labels": {
+        "en": "Control point",
+        "ru": "Контрольный пункт",
+        "uz-Latn": "Nazorat nuqtasi"
+      },
+      "allowedShortLabel": {
+        "en": "Control point",
+        "ru": "Контрольный пункт",
+        "uz-Latn": "Nazorat nuqtasi"
+      },
+      "definition": "Authority-designated location where an obligation is tested; a gauge is not automatically such a point.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Control point"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "gauging station automatically",
+        "water-quality control section"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "quality-section",
+      "labels": {
+        "en": "Water-quality control section",
+        "ru": "Контрольный створ качества воды",
+        "uz-Latn": "Suv sifati nazorat kesimi"
+      },
+      "allowedShortLabel": {
+        "en": "Water-quality control section",
+        "ru": "Контрольный створ качества воды",
+        "uz-Latn": "Suv sifati nazorat kesimi"
+      },
+      "definition": "Water-quality compliance section; do not merge with the method control point without an explicit mapping.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "control section"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "quantity control point automatically"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "flow-regime",
+      "labels": {
+        "en": "Flow regime",
+        "ru": "Режим стока",
+        "uz-Latn": "suv rejimi"
+      },
+      "allowedShortLabel": {
+        "en": "Flow regime",
+        "ru": "Режим стока",
+        "uz-Latn": "suv rejimi"
+      },
+      "definition": "Time pattern of water quantity, including seasonal/interannual variation. The Code water-regime term is broader and also includes quality, level and velocity.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Flow regime"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "source-exact",
+          "source": "uz-code-2025",
+          "rationale": "Exact label in held official Uzbek Latin Code"
+        }
+      },
+      "prohibitedConflations": [
+        "constant minimum only"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "environmental-flow",
+      "labels": {
+        "en": "Environmental flow",
+        "ru": "Экологический режим стока",
+        "uz-Latn": "Ekologik oqim rejimi"
+      },
+      "allowedShortLabel": {
+        "en": "Environmental flow",
+        "ru": "Экологический режим стока",
+        "uz-Latn": "Ekologik oqim rejimi"
+      },
+      "definition": "Magnitude, timing, duration, frequency and rate of change supporting aquatic ecosystems; broader than a single floor or release.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Environmental flow"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "sanitary release",
+        "constant low-flow floor"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "sanitary-ecological-release",
+      "labels": {
+        "en": "Sanitary and ecological releases",
+        "ru": "Санитарные и экологические попуски",
+        "uz-Latn": "Sanitariya va ekologik maqsadlarda suv chiqarish"
+      },
+      "allowedShortLabel": {
+        "en": "Sanitary and ecological releases",
+        "ru": "Санитарные и экологические попуски",
+        "uz-Latn": "Sanitariya va ekologik maqsadlarda suv chiqarish"
+      },
+      "definition": "Code Article 122 releases for quality, water use and conservation of wetlands, lakes and shorelines. This paired statutory label is distinct from the full scientific environmental-flow regime.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Sanitary and ecological releases"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "source-exact",
+          "source": "uz-code-2025",
+          "rationale": "Exact label in held official Uzbek Latin Code"
+        }
+      },
+      "prohibitedConflations": [
+        "automatically calibrated ecological regime"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "annual-runoff-volume",
+      "labels": {
+        "en": "Annual runoff volume",
+        "ru": "Годовой объём стока",
+        "uz-Latn": "Yillik oqim hajmi"
+      },
+      "allowedShortLabel": {
+        "en": "Annual runoff volume",
+        "ru": "Годовой объём стока",
+        "uz-Latn": "Yillik oqim hajmi"
+      },
+      "definition": "Flow integrated over one year, in volume units; not instantaneous discharge and not an annual exceedance probability.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "annual"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "discharge",
+        "probability"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "annual-exceedance",
+      "labels": {
+        "en": "Annual exceedance probability",
+        "ru": "Годовая обеспеченность",
+        "uz-Latn": "Yillik taʼminlanganlik ehtimoli"
+      },
+      "allowedShortLabel": {
+        "en": "Annual exceedance probability",
+        "ru": "Годовая обеспеченность",
+        "uz-Latn": "Yillik taʼminlanganlik ehtimoli"
+      },
+      "definition": "Probability with which an annual volume is equalled or exceeded; 75% class is not allocation of 75% of this year’s actual runoff.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "exceedance"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "allocation percentage",
+        "daily Q95"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "ecological-need",
+      "labels": {
+        "en": "Ecological need",
+        "ru": "Экологическая потребность",
+        "uz-Latn": "Ekologik ehtiyoj"
+      },
+      "allowedShortLabel": {
+        "en": "Ecological need",
+        "ru": "Экологическая потребность",
+        "uz-Latn": "Ekologik ehtiyoj"
+      },
+      "definition": "Assessment target kept visible independently of current shortage; the teaching schedule is not an adopted complete requirement.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "requirement"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "issued instruction",
+        "ecological consumption"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "conditional-availability",
+      "labels": {
+        "en": "Conditional availability",
+        "ru": "Условная доступность воды",
+        "uz-Latn": "Shartli mavjud suv"
+      },
+      "allowedShortLabel": {
+        "en": "Conditional availability",
+        "ru": "Условная доступность воды",
+        "uz-Latn": "Shartli mavjud suv"
+      },
+      "definition": "Water available under explicit forcing and model assumptions, distinct from a naturalised reference and actual delivery.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "available"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "naturalised reference",
+        "measured delivery"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "deliverability",
+      "labels": {
+        "en": "Deliverability",
+        "ru": "Осуществимость подачи",
+        "uz-Latn": "Yetkazish imkoniyati"
+      },
+      "allowedShortLabel": {
+        "en": "Deliverability",
+        "ru": "Осуществимость подачи",
+        "uz-Latn": "Yetkazish imkoniyati"
+      },
+      "definition": "Feasible prospective delivery at a defined point under stated assumptions; not renamed actual delivery.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "deliverable"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "actual delivery",
+        "basin optimum"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "issued-instruction",
+      "labels": {
+        "en": "Issued instruction",
+        "ru": "Предписание подачи",
+        "uz-Latn": "Yetkazish koʻrsatmasi"
+      },
+      "allowedShortLabel": {
+        "en": "Issued instruction",
+        "ru": "Предписание подачи",
+        "uz-Latn": "Yetkazish koʻrsatmasi"
+      },
+      "definition": "Versioned operational instruction at a point/date, assessed separately from ecological need; teaching instruction is not legal adoption.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "delivery obligation"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "ecological status",
+        "ecological requirement"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "actual-delivery",
+      "labels": {
+        "en": "Actual delivery",
+        "ru": "Фактическая подача",
+        "uz-Latn": "Amaldagi yetkazish"
+      },
+      "allowedShortLabel": {
+        "en": "Actual delivery",
+        "ru": "Фактическая подача",
+        "uz-Latn": "Amaldagi yetkazish"
+      },
+      "definition": "Delivered quantity from matching observed or simulated evidence; this application uses synthetic saved simulations.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "delivered"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "observed without evidence",
+        "issued instruction"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "floor",
+      "labels": {
+        "en": "Low-flow floor",
+        "ru": "Меженный минимум",
+        "uz-Latn": "Kam suvli minimum"
+      },
+      "allowedShortLabel": {
+        "en": "Low-flow floor",
+        "ru": "Меженный минимум",
+        "uz-Latn": "Kam suvli minimum"
+      },
+      "definition": "One lower-flow ingredient; a constant floor alone is not the complete seasonal ecological regime.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "floor"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "complete regime",
+        "delivery duty automatically"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "status",
+      "labels": {
+        "en": "Ecological status",
+        "ru": "Экологическое состояние",
+        "uz-Latn": "Ekologik holat"
+      },
+      "allowedShortLabel": {
+        "en": "Ecological status",
+        "ru": "Экологическое состояние",
+        "uz-Latn": "Ekologik holat"
+      },
+      "definition": "Ecological classification requiring biological and supporting evidence; physical criterion passes alone do not establish it.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Ecological status"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "flow pass",
+        "habitat suitability score"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "potential",
+      "labels": {
+        "en": "Ecological potential",
+        "ru": "Экологический потенциал",
+        "uz-Latn": "Ekologik salohiyat"
+      },
+      "allowedShortLabel": {
+        "en": "Ecological potential",
+        "ru": "Экологический потенциал",
+        "uz-Latn": "Ekologik salohiyat"
+      },
+      "definition": "Objective track for artificial and validly designated heavily modified bodies; physical alteration alone does not determine it.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Ecological potential"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "natural origin lost",
+        "uncertainty class"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "pending",
+      "labels": {
+        "en": "Pending",
+        "ru": "Ожидает данных или решения",
+        "uz-Latn": "Dalil yoki qaror kutilmoqda"
+      },
+      "allowedShortLabel": {
+        "en": "Pending",
+        "ru": "Ожидает данных или решения",
+        "uz-Latn": "Dalil yoki qaror kutilmoqda"
+      },
+      "definition": "Not established; record the reason, required evidence and responsible role. Numeric zero is a valid separate value.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "not established"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "zero",
+        "pass"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "wua",
+      "labels": {
+        "en": "Weighted usable area",
+        "ru": "Взвешенная пригодная площадь",
+        "uz-Latn": "Vaznlangan yaroqli maydon"
+      },
+      "allowedShortLabel": {
+        "en": "Weighted usable area",
+        "ru": "Взвешенная пригодная площадь",
+        "uz-Latn": "Vaznlangan yaroqli maydon"
+      },
+      "definition": "Habitat area weighted by suitability. Expand WUA explicitly because the report also uses the acronym for water-users’ association.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "Weighted usable area"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "water-users’ association",
+        "ecological status"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "water-management-balance",
+      "labels": {
+        "en": "Water-management balance",
+        "ru": "Водохозяйственный баланс",
+        "uz-Latn": "Suv xoʻjaligi balansi"
+      },
+      "allowedShortLabel": {
+        "en": "Water-management balance",
+        "ru": "Водохозяйственный баланс",
+        "uz-Latn": "Suv xoʻjaligi balansi"
+      },
+      "definition": "Planning/legal account of resources and uses, distinct from hydrological conservation closure.",
+      "source": {
+        "id": "report-appendix-b",
+        "distinctivePhrase": "water-management balance"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Russian translation; independent linguistic approval not supplied"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "water balance"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "discharge",
+      "labels": {
+        "en": "Discharge",
+        "ru": "расход (воды)",
+        "uz-Latn": "Suv sarfi"
+      },
+      "allowedShortLabel": {
+        "en": "Discharge",
+        "ru": "расход (воды)",
+        "uz-Latn": "Suv sarfi"
+      },
+      "definition": "Water volume per unit time; not annual volume.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "расход (воды)"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "расход (воды)",
+          "wmoEntry": "84 / 1449"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "stream-gauging",
+      "labels": {
+        "en": "Stream gauging",
+        "ru": "измерение расхода",
+        "uz-Latn": "Suv sarfini oʻlchash"
+      },
+      "allowedShortLabel": {
+        "en": "Stream gauging",
+        "ru": "измерение расхода",
+        "uz-Latn": "Suv sarfini oʻlchash"
+      },
+      "definition": "Measurement of discharge.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "измерение расхода"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "измерение расхода",
+          "wmoEntry": "1449"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "gauging-station",
+      "labels": {
+        "en": "Gauging station",
+        "ru": "гидрометрическая станция",
+        "uz-Latn": "Gidrometrik stansiya"
+      },
+      "allowedShortLabel": {
+        "en": "Gauging station",
+        "ru": "гидрометрическая станция",
+        "uz-Latn": "Gidrometrik stansiya"
+      },
+      "definition": "Hydrometric observation station; not automatically a legal control point.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "гидрометрическая станция"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "гидрометрическая станция",
+          "wmoEntry": "635"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "reservoir",
+      "labels": {
+        "en": "Reservoir",
+        "ru": "водохранилище",
+        "uz-Latn": "Suv ombori"
+      },
+      "allowedShortLabel": {
+        "en": "Reservoir",
+        "ru": "водохранилище",
+        "uz-Latn": "Suv ombori"
+      },
+      "definition": "Storage water body; a stage or water-level target may be required, not merely a passing river-flow value.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "водохранилище"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "водохранилище",
+          "wmoEntry": "1211"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "dead-storage",
+      "labels": {
+        "en": "Dead storage",
+        "ru": "мёртвый объём",
+        "uz-Latn": "Foydalanilmaydigan zaxira hajmi"
+      },
+      "allowedShortLabel": {
+        "en": "Dead storage",
+        "ru": "мёртвый объём",
+        "uz-Latn": "Foydalanilmaydigan zaxira hajmi"
+      },
+      "definition": "Storage unavailable for release through normal outlets.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "мёртвый объём"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "мёртвый объём",
+          "wmoEntry": "338"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "live-storage",
+      "labels": {
+        "en": "Usable storage",
+        "ru": "полезная ёмкость (водохранилища)",
+        "uz-Latn": "Foydali sigʻim"
+      },
+      "allowedShortLabel": {
+        "en": "Usable storage",
+        "ru": "полезная ёмкость (водохранилища)",
+        "uz-Latn": "Foydali sigʻim"
+      },
+      "definition": "Reservoir storage available for use under the defined operating geometry.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "полезная ёмкость (водохранилища)"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "полезная ёмкость (водохранилища)",
+          "wmoEntry": "1579"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "spillway",
+      "labels": {
+        "en": "Spillway",
+        "ru": "водосброс",
+        "uz-Latn": "Suv tashlash inshooti"
+      },
+      "allowedShortLabel": {
+        "en": "Spillway",
+        "ru": "водосброс",
+        "uz-Latn": "Suv tashlash inshooti"
+      },
+      "definition": "Structure for spilling water, distinct from irrigation return flow.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "водосброс"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "водосброс",
+          "wmoEntry": "1399"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "conductivity",
+      "labels": {
+        "en": "Electrical conductivity of water",
+        "ru": "электропроводность (воды)",
+        "uz-Latn": "Suvning elektr oʻtkazuvchanligi"
+      },
+      "allowedShortLabel": {
+        "en": "Electrical conductivity of water",
+        "ru": "электропроводность (воды)",
+        "uz-Latn": "Suvning elektr oʻtkazuvchanligi"
+      },
+      "definition": "Conductivity indicator, not a universal salt concentration conversion.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "электропроводность (воды)"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "электропроводность (воды)",
+          "wmoEntry": "465"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "mineralization",
+      "labels": {
+        "en": "Mineralization",
+        "ru": "минерализация",
+        "uz-Latn": "Minerallashuv"
+      },
+      "allowedShortLabel": {
+        "en": "Mineralization",
+        "ru": "минерализация",
+        "uz-Latn": "Minerallashuv"
+      },
+      "definition": "Dissolved mineral content; preserve units and measurement basis.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "минерализация"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "минерализация",
+          "wmoEntry": "949"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "suspended-sediment",
+      "labels": {
+        "en": "Suspended sediment",
+        "ru": "взвешенный нанос",
+        "uz-Latn": "Muallaq choʻkindi"
+      },
+      "allowedShortLabel": {
+        "en": "Suspended sediment",
+        "ru": "взвешенный нанос",
+        "uz-Latn": "Muallaq choʻkindi"
+      },
+      "definition": "Sediment carried in suspension.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "взвешенный нанос"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "взвешенный нанос",
+          "wmoEntry": "1475"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "return-flow",
+      "labels": {
+        "en": "Return flow",
+        "ru": "возвратный сток",
+        "uz-Latn": "Qaytma oqim"
+      },
+      "allowedShortLabel": {
+        "en": "Return flow",
+        "ru": "возвратный сток",
+        "uz-Latn": "Qaytma oqim"
+      },
+      "definition": "Water returning after use; not a reservoir release or a new external basin inflow.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "возвратный сток"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "возвратный сток",
+          "wmoEntry": "1233"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    },
+    {
+      "id": "water-balance",
+      "labels": {
+        "en": "Water balance",
+        "ru": "водный баланс",
+        "uz-Latn": "Suv balansi"
+      },
+      "allowedShortLabel": {
+        "en": "Water balance",
+        "ru": "водный баланс",
+        "uz-Latn": "Suv balansi"
+      },
+      "definition": "Conservation account: inflow minus outflow, losses, consumption and change in storage.",
+      "source": {
+        "id": "wmo-b9",
+        "distinctivePhrase": "водный баланс"
+      },
+      "languageStatus": {
+        "en": {
+          "status": "provisional",
+          "rationale": "Concise interface label and paraphrase grounded in the live report; no terminology approval implied"
+        },
+        "ru": {
+          "status": "source-exact",
+          "source": "wmo-b9",
+          "rationale": "Exact B9 WMO label",
+          "distinctivePhrase": "водный баланс",
+          "wmoEntry": "1608"
+        },
+        "uz-Latn": {
+          "status": "provisional",
+          "source": "report-appendix-b",
+          "rationale": "Generated Uzbek Latin translation of report meaning; not an official approved term"
+        }
+      },
+      "prohibitedConflations": [
+        "water-management balance"
+      ],
+      "reviewStatus": "source trace recorded; professional trilingual terminology review pending"
+    }
+  ],
+  "statusCrosswalk": {
+    "reportPoor": "WFD bad",
+    "reportUnsatisfactory": "WFD poor",
+    "application": "No ecological status is assigned by the demonstrator."
+  }
+}

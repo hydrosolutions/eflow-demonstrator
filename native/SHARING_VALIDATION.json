@@ -1,0 +1,42 @@
+{
+  "status": "native_addon_complete",
+  "datasetId": "guided-sharing-synthetic-v1",
+  "annualDays": 365,
+  "attempts": 2,
+  "firstAttempt": "Exactoracle failed1L atday94; diagnosticssealed",
+  "repair": "Explicit offeredcap floored to2m3/day; no tolerated residual",
+  "annualRuntimeSeconds": 12.682547416945454,
+  "peakRssBytes": 87031808,
+  "irrigationDays": 219,
+  "totals": {
+    "grossDiversionM3": 10048760.0,
+    "consumptionM3": 5024380.0,
+    "returnM3": 5024380.0,
+    "outletM3": 54894400.0,
+    "parentPriorityOutletM3": 59918780.00000001,
+    "extraEcologicalShortfallM3": 5024380.0
+  },
+  "ecologicalShortfallDays": 365,
+  "issuedShortfallDays": 0,
+  "maxNativeWaterSaltResidualCounts": 0,
+  "frozenSourceAndParentHashesVerified": {
+    "sharing_model.py": "12127c17f32e28724d9e1d63290f9549f77a7ccd2cd64ca8e1c2812d332dff87",
+    "run_sharing.py": "a16910ee5af5bcaf034f8a75341939eee30b01760e72aca755a761a660245810",
+    "guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+    "uv.lock": "1585f57b1f9e04c887d9b6bc05a5fb1fb3e0f211d0fd071aeed6e19b39034957",
+    "../data/guided.json": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "../data/guided-data.js": "d6eb7c3717fa915f0bcc31e939cd8ba8d8aa2be6ab1561ddc344eb7136b0211b"
+  },
+  "reproduction": {
+    "status": "passed",
+    "days": 16,
+    "physicalCriteriaFishyNativeDigestsIdentical": true,
+    "sourcesAndOriginalPayloadHashesUnchanged": true,
+    "excluded": "Runtime and absolute diagnostic paths only"
+  },
+  "tests": "2sharingbehavior/package tests passed",
+  "payloadHashes": {
+    "guided-sharing.json": "3cda18004281eb7625588148aa4c832d80b3abf540cd429c6e0ef1cd14f8e4cc",
+    "guided-sharing.js": "a0e941088152b336450874dc4ddc49774b457fa4a23f2b4d0d6efced997faea5"
+  }
+}

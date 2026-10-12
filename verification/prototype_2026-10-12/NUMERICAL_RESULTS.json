@@ -1,0 +1,211 @@
+{
+  "status": "independently_admitted",
+  "annualCases": 16,
+  "daysPerCase": 365,
+  "chunks": 1952,
+  "witnesses": 9,
+  "elapsedSeconds": 208.73554029199295,
+  "peakRssBytes": 90161152,
+  "outputs": {
+    "comparison-ecology.json": "72d677a1f721adcdf999fa5748f112e954d12a992c1be9d87d0a4cd629134ce0",
+    "comparison-irrigation.json": "7037caba6f2620bb9d35b3571ac5a10c4b2b2f852da1aae0d2a9e8ffbdce599e",
+    "comparison-stress-ecology.json": "77089535aaa036576ad410885449aa5aed956b6a3a18c7a8fa12be70ac5f85ba",
+    "comparison-stress-irrigation.json": "0fda9710f2379065fee1cbea1df89d203be4fcb6731b39fd77c098f006a243f3"
+  },
+  "findings": {
+    "comparison-ecology.json": {
+      "normal": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 32307454.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 8474494.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 33133438.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 14957804.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 4308610.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 17283632.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        }
+      }
+    },
+    "comparison-irrigation.json": {
+      "normal": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 35534358.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 167,
+          "R2bIssuedShortfallDays": 156,
+          "diversionM3": 35534358.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 11
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 35534358.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 136,
+          "R2bIssuedShortfallDays": 3,
+          "diversionM3": 24644810.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 133
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 185,
+          "R2bIssuedShortfallDays": 179,
+          "diversionM3": 24644810.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 6
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 65,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 24644810.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 65
+        }
+      }
+    },
+    "comparison-stress-ecology.json": {
+      "normal": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 32307454.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 8474494.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 33133438.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 14957804.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 0.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 17283632.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        }
+      }
+    },
+    "comparison-stress-irrigation.json": {
+      "normal": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 35534358.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 167,
+          "R2bIssuedShortfallDays": 156,
+          "diversionM3": 35534358.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 11
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 0,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 35534358.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        }
+      },
+      "dry": {
+        "swiss": {
+          "R2aIssuedShortfallDays": 136,
+          "R2bIssuedShortfallDays": 3,
+          "diversionM3": 24644810.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 133
+        },
+        "kazakh": {
+          "R2aIssuedShortfallDays": 219,
+          "R2bIssuedShortfallDays": 219,
+          "diversionM3": 24644810.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 0
+        },
+        "site": {
+          "R2aIssuedShortfallDays": 65,
+          "R2bIssuedShortfallDays": 0,
+          "diversionM3": 24644810.0,
+          "requestM3": 36302008.0,
+          "returnMaskingDays": 65
+        }
+      }
+    }
+  },
+  "independentArtifactTests": 11,
+  "independentAdmission": "INDEPENDENT_ADMISSION.json"
+}

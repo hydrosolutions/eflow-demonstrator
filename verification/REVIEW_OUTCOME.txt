@@ -1,0 +1,16 @@
+GUIDED E-FLOW DEMONSTRATOR — IMPLEMENTATION REVIEW
+
+Implemented against upstream main 9a21813e3bbb296b5c239f27e63e4d9eacafca0e.
+New entry: guided.html. All new public inputs are synthetic.
+
+Five-step journey: classify six water bodies; distinguish physical reaches and junctions; compare paired natural/managed configurations; trace an annual quantity component into native operating rules and actual Fishy findings; retain the selected evidence record. Optional entry, habitat, canal, wetland, salt-source and uncertainty exercises remain separately identified.
+
+Four 365-day saved native scenarios completed in 41.800747 seconds aggregate under declared bounds. Each annual case uses 122 state-carrying chunks, not one continuous annual run. Independent review checked 1460 scenario-days and 26280 exact node/basin water/salt balance rows. A separate nontrivial six-day continuous/chunk equivalence test passed, as did CLI reproduction and known-zero evidence. This is not evidence that the larger Zarafshan performance blocker is resolved.
+
+Normal managed case meets both teaching criteria. Dry managed case has 365 ecological-shortfall days but no issued-instruction shortfall. The independent 10/7/5 native case accounts explicitly for the missing 2 m3/s and demonstrates an instruction shortfall. Quantity findings do not establish ecological status or legal responsibility. The annual component omits winter, spawning, daily-risk and quality limbs; it is not the complete report baseline.
+
+Scientific review and application behavior checks passed. Rendered browser walkthrough passed. Browser download receipt is UNVERIFIED: the in-app browser exposed no completed event in two attempts. Exact rendered JSON was saved and checked against selected native data; export serialization is independently reviewed. Standard workshop-browser download verification remains a release check. No deployment or merge is authorized by this outcome.
+
+Presentation v29 changes the demo cue slides51–55 and source locator57, plus timing notes. Main methodology slide XML1–50 and74 inherited media/chart/workbook assets are preserved. Changed slides were rendered and inspected.
+
+See SCIENCE_REVIEW.json, ANNUAL_SCIENCE_INDEPENDENT.json, BROWSER_ACCEPTANCE.json, native/VALIDATION.json and native/REPRODUCE.txt. Raw native evidence remains outside the static app in native_audit/.

@@ -1,0 +1,32 @@
+{
+  "status": "walkthrough_passed_download_completion_unverified",
+  "checks": [
+    "classification designation retains natural origin",
+    "landscape/network toggle and shared R2a/R2b selection",
+    "keyboard activation selects W1",
+    "unknown W1 supply and separate supplied receptor balance",
+    "normal/dry same-forcing comparisons and reconciled daily water table",
+    "keyboard day selector updates date and values",
+    "actual native ecological/instruction/delivery series and Fishy counts",
+    "separate native 10/7/5 evidence identity",
+    "entry/presumptive clears seasonal findings",
+    "canal, salt source reduction and uncertainty examples",
+    "reload retains selected body overrides and optional settings",
+    "rendered exact export JSON matches selected native data",
+    "no warning/error console messages"
+  ],
+  "downloadVerification": {
+    "attempts": 2,
+    "result": "in-app browser download event did not complete; file receipt not confirmed",
+    "nextStrategy": "Verify JSON and readable downloads in standard workshop browser before release; exact rendered JSON and export logic checked separately"
+  },
+  "screenshots": [
+    "guided_compare.jpg",
+    "guided_network.jpg"
+  ],
+  "recordSha256": "754359b26cec9017009dc3cb0ebc83b14e001f321f9686a526044a3be8ade2c5",
+  "limitations": [
+    "No cross-browser/mobile claim",
+    "No deployment or production release acceptance"
+  ]
+}

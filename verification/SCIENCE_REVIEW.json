@@ -1,0 +1,125 @@
+{
+  "status": "draft_ready_download_verification_pending",
+  "scope": "Independent review of live method, plan, public application behavior, numerical fixtures and actual native physical artifacts. No product implementation edits by this reviewer.",
+  "unresolved_scientific_blockers": [],
+  "tests": {
+    "file": "eflow-demonstrator/tests/test_guided_application.cjs",
+    "independent_application_cases": 18,
+    "passed": 38,
+    "failed": 0,
+    "scope": [
+      "classification and immutable origin across designation changes",
+      "floor-only/presumptive guards and no stale baseline duty",
+      "unknown receptor pathway and no inherited river verdict",
+      "zero versus missing evidence and uncertainty intervals",
+      "prospective frozen duty versus actual delivery",
+      "cross-dataset/reference/policy/checkpoint/calendar mismatch rejection",
+      "optional canal/receptor/habitat and salt source-control arithmetic",
+      "all four actual annual scenarios: conservation, natural transformation, reference arithmetic, Fishy findings and record identity"
+    ],
+    "total_node_tests_passed": 38,
+    "run_scope": "Independent reviewer verified37 tests before formatter addition and the new formatter test afterwards; root then ran the complete final suite and reported38/38 passing. No additional broad test run by reviewer.",
+    "final_full_suite": {
+      "source": "root final verification",
+      "passed": 38,
+      "failed": 0
+    }
+  },
+  "native_smoke_review": {
+    "status": "admitted_for_bounded_annual_execution",
+    "independent_checks": [
+      "continuous6 vs chunk3+3 exact physical incoming/outgoing/storage excluding local step counter",
+      "published water/salt/criteria/deliverability and raw Fishy equality",
+      "per-node and basin water/salt integer closure",
+      "positive spill/diversion/ET/return exercised",
+      "full inventory handoff",
+      "Fishy finding and magnitude independently compared with native incoming counts and declared criteria",
+      "conditional deliverability recomputed from physical prior/current storage+inflow+return",
+      "actual separate3day10/7/5 closure and Fishy2m3/s issued shortfall"
+    ],
+    "exact_balance_rows_checked": 234,
+    "sha256": {
+      "native_audit/smoke-v5-continuous/result.json": "1196b8432ea1f43b7f8d6217c1274dddd9d2b3f771a0c4ee45010a64d6d18d2c",
+      "native_audit/smoke-v5-chunked/result.json": "b09acfdf0522c6a77683d380e7e7d2c595245ba53c4b72b3797251de7ae922aa",
+      "native_audit/shortfall-v2/result.json": "3ca73c8a5c287ccbb60698625d6679c77bd4d4f6d8f83cc908fd6f819e2575eb",
+      "eflow-demonstrator/native/guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df"
+    },
+    "limitations": [
+      "6day supplied5Mm3 smoke only; annual artifacts not admitted yet",
+      "same-day deliverability conditioned on committed diversion/current state",
+      "3day shortfall fixture separate from annual network"
+    ]
+  },
+  "native_annual_review": {
+    "status": "passed",
+    "nativeScenarioDays": 1460,
+    "nativeChunks": 488,
+    "exactNodeAndBasinWaterSaltRows": 26280,
+    "actualVsPublished": "All8flow arrays,storage and5saltconcentration arrays matched actual native physical samples for every day",
+    "nativeZeroCase": "3days numerical zero flow retained; concentration null; ecological positive criterion shortfall, zero issued criterion met; no ecological adequacy claim",
+    "resultSha256": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "modelSha256": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df"
+  },
+  "scientific_findings": {
+    "reference": "100 declared synthetic scaled years; memoryless natural routing analytically evaluated and checked against native normal/dry counterparts. One model, not independent accepted reconstructions.",
+    "natural_transformation": "Retains prescribed mixed5% natural sink; artificial withdrawal/consumption/returns inactive; reservoir replaced by declared zero-inventory memoryless channel. No groundwater or climate reconstruction inferred.",
+    "method_component": "50% design class maps to75% annual magnitude and common daily shape. 103.950328Mm3 quantized teaching schedule, not complete report method; risk/winter/spawning/quality limbs omitted.",
+    "delivery": "Same-day deliverable bound independently recomputed conditional on current state and committed diversion; issued instruction=min(need,bound), not set from actual delivery.",
+    "outcomes": "Normal managed matches teaching ecological criterion all365days. Dry managed has365 ecological deficit days but zero issued-duty deficit days. Separate3daynative10/7/5 demonstrates2m3/s issued shortfall. No ecological-status/fault finding.",
+    "classification": "R2 remains natural origin under designation variants. W1 stays natural with receptor overlay in raw fixture and UI; unknown paths do not become inflows.",
+    "optional_examples": "Canal0.6m3/s is supplied kinematics, not validated hydraulic rating; service1.2 separate. Wetland1100m3/10days is independent supplied geometry/balance, unsized default. Salt600\u2192400g/s and240\u2192160mg/L source reduction are independent complete-mixing examples; formal extra-release sizing remains null.",
+    "zero_case": "Actual3dayzero native evidence: positive ecological criterion fails; zero issued criterion numerically met; no water concentration emitted. Numeric zero is not missing evidence."
+  },
+  "resolved_findings": [
+    "Floor-only branch guard added to plan and implementation with tests",
+    "Legacy W1 asserted R2 path removed and origin migrated",
+    "Native and browser schema versions/identity checks added",
+    "Raw W1 track receptor corrected to natural/status plus receptor overlay",
+    "Missing selected-day evidence cannot inherit passing native finding",
+    "Added replay schema identity rejection guards and optional mapping/storage checks",
+    "Readable export expanded to actual result/evidence summary and independently tested",
+    "REPRODUCE.txt now includes mandatory zero-evidence command and explicit prerequisite paths"
+  ],
+  "browser_review": {
+    "source": "Root actual rendered-browser walkthrough; BROWSER_ACCEPTANCE.json",
+    "walkthrough": "passed five screens, classification/network keyboard interaction, paired curves and balance, actual normal/dry/Fishy and native shortfall, optional cases, reload/current overrides",
+    "rendered_record": "Independent reviewer parsed browser_record_dry_R2.json and verified dataset/scenario/reference/policy/checkpoint/date/current values and full findings against final payload",
+    "download_completion": "UNVERIFIED: in-app browser download event failed to complete in two attempts. File receipt not confirmed. No further download attempt made.",
+    "export_code_inspection": "JSON/text handlers obtain current record, create correctly typed Blob, set .download filename, click anchor and revoke URL after one second. No obvious serialization/identity bug found. This inspection does not verify browser file delivery; detached-anchor/object-URL behavior remains browser-dependent.",
+    "readable_export": "New pure readableRecord formatter independently tested; includes classification evidence, IDs, values, units, Fishy counts, balance, actions and limitations. Numeric zero displayed as zero; floor-only seasonal operands explicitly Pending. File delivery still unverified.",
+    "next_step_before_release": "Verify both JSON and readable-text file receipt in the standard workshop browser. Draft package can be reviewed with limitation stated."
+  },
+  "limitations": [
+    "Synthetic teaching assumptions only; no official designation or adopted ecological requirement",
+    "122 state-carrying runs per annual scenario, not continuous365day performance evidence",
+    "No final national receptor/quality/habitat sizing or thermal physics",
+    "No public redistribution of observed2017 project record"
+  ],
+  "artifact_sha256": {
+    "eflow-demonstrator/data/guided.json": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "eflow-demonstrator/native/guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+    "eflow-demonstrator/guided-engine.js": "1c241567e00c1478700c2a864207410c9db0bdafd7fc9c26f731fbab7999d131",
+    "eflow-demonstrator/guided.js": "10f3f384ab841e516afdf712d2a77918e33502637b320b39f054587f0bedd04a",
+    "eflow-demonstrator/tests/test_guided_application.cjs": "86851bde9c1174b047a4a84caa0bd2326fd62a9deaf742c607613e0837a70bcd",
+    "eflow-demonstrator/tests/test_assessment.cjs": "13d9bd4c7bee5683177d27768b4c34ec231a31fdc51e0784ef91ee872bafd8ef",
+    "eflow-demonstrator/native/REPRODUCE.txt": "8bc3cbb9c0507901585735f6471fafc5068983eec251b74f39a5d1df80720369",
+    "BROWSER_ACCEPTANCE.json": "4038c5cf6593bf3c66cd3d5ab343fc3e35fb596741196bcc667485293d182af1",
+    "browser_record_dry_R2.json": "754359b26cec9017009dc3cb0ebc83b14e001f321f9686a526044a3be8ade2c5"
+  },
+  "releaseAcceptance": false,
+  "reproduction_review": {
+    "status": "documentation_and_path_sanity_passed",
+    "file": "eflow-demonstrator/native/REPRODUCE.txt",
+    "checks": [
+      "No host absolute paths needed by generator/package scripts",
+      "uv.lock pins exact upstream commits; no latest-main claim",
+      "Relative sibling audit/output paths coherent from native/",
+      "Both supervised smoke modes, four bounded annual cases, shortfall and zero-evidence commands documented",
+      "Manual independent chunk admission is explicitly required and records reviewer/hash/checks",
+      "Every build_package.py required artifact listed",
+      "Source-hash gate and separate annual initial state documented"
+    ],
+    "limitation": "No fresh dependency installation or another annual run performed during this review; original bounded CLI reproduction evidence remains separate."
+  },
+  "root_final_diff_check": "Root reports git diff --check clean"
+}

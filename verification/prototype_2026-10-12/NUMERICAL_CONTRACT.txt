@@ -1,0 +1,40 @@
+ALLOCATION PRIORITY COMPARISON CONTRACT — 2026-10-12
+New audit only; all previous inputs/results/native sources immutable. Same topology and admitted Koksu forcing, illustrative matched/stress candidates,5% natural loss,5Mm3 initially empty reservoir,max3m3/s seasonal request,50% same-day irrigationreturn. Remove the20%diversion cap for BOTH new priority policies. These are controlled operating examples, not adopted legal allocation priorities.
+
+Physical order in exact litres, with same prospective criterion at R2a andR2b:
+B=boundary;N=B/20;R=B-N;E=quantized candidate daily litres.
+Common frozen issued I=min(E,R), independent of priority,diversion andstorage. This is an explicitly supplied illustrative instruction; it is not deliverability optimization or legal permit. When policy depletes water, I is not reduced retrospectively. A missed criterion does not automatically assign legal fault.
+Ecology-first: D=min(request,2000*floor(max(R-E,0)/2000)).
+Upstream-irrigation-first: D=min(request,2000*floor(R/2000)).
+Round available allocation down to even wholem3 for exact50%return; quantum is not a20%cap. Request is already in2m3 multiples. T=D/2;ET=D-T.
+A=Sstart+R-D;P=max(0,A-capacity);release=min(A-P,max(0,E-P)).
+R2a=P+release (native incomingR2a before D1return);R2b=R2a+T (native incomingR2b);Send=A-P-release.
+No returncredit when targeting R2a. Both sections receive the same candidate and issued schedules only as an explicit illustration. They have separate actualflows and separateFishy assessments.
+Natural counterpart: no artificial diversion/return/storage;R2a=R2b=R. No hypothesis that a real naturalised reference has been established.
+Exact balance B+Sstart=N+ET+R2b+Send. All nonreservoir transitstores remain0; native zero-inert accounting and every physicalbalance remain exact. Existing canonical count→m3 projection and half-quantum request adapter retained without changes.
+
+Public Python interface
+Policy adds priority: str ('ecology-first'|'irrigation-first'); version='allocation-r2a-policy-v1'; removes cap_divisor from operative equations (no20%policy). All other policyconstant values retained. DailyLedger adds request_litres (unaltered seasonal irrigation request) and r2a_litres nativeactual; downstream_litres remains nativeR2b. candidate_litres andissued_litres are shared declared sectioncriteria.
+ScenarioResult adds r2a_fishy_assessment dict. Existing fishy_assessment remains R2b. simulate(forcing,candidate,policy,output,chunk_days,managed=True) unchangedsignature. Independent recurrence is separate from native operation and never feeds nativeoutputs.
+Candidate version/provenance preserve matched versus stress targets; no relabelling of oldnative policy outputs. Newmodel='koksu-allocation-priority-network-v1'. All four datasets are newly native-calculated under the new operating rules.
+
+Stable JSON API
+Four final files:comparison-ecology.json,comparison-irrigation.json,comparison-stress-ecology.json,comparison-stress-irrigation.json.
+Each preserves scenarios.normal/dry.year,dates,inflowM3s,naturalM3s,methods.swiss/kazakh/site.
+Eachmethod retains candidateM3s,rawCandidateM3s,actualM3s (R2b),ledger,metrics,fishyAssessment (R2b),provenance.
+Eachmethod adds actualR2aM3s,r2aFishyAssessment,r2aMetrics. ledger.r2a_litres is directly from native physicalincomingR2a, not inferred from a downstream curve. BothFishyassessment dictionaries contain candidate/issued with rawFishy,shortfallM3s,shortfallDays,shortfallVolumeM3,criterionID/version andhypothetical applicability; section-specific IDs andmapping. Missingsectiondata is unknown, never borrowed fromR2b.
+Toplevel comparisonMode='year-matched'|'fixed-normal-target-stress'; allocationPriority='ecology-first'|'irrigation-first'; source/target/policy/model/runtime hashes andlimitations. No output marked admitted until eightcompletecases for thatdataset passinternalgates; rootpublishes only afterfinalindependentreview. Entirestage outputs allfourcomplete datasets.
+
+Execution
+Sixteen unique complete365-day cases:12matched managed (2priorities×2forcings×3methods),2dryKazakh fixed-normal-target stress cases,2no-management counterparts. Stressfiles reuse unchanged matched methodrecords fornormalallmethods anddrySwiss/site, after exact raw/quantizeddailyprofile equality, sharedsource/calendar/policy checks. Recordtop-level reusedRunProvenance with originaldataset/scenario/method,targethashes/profilehashes andactualrunidentity. Preserve calculationrecordprovenance unchanged; never pretend32runs executed. Naturalseries reused acrosspriorities/modes with explicitno-management identity. Eachnativecase has122three-day statecarryoverchunks; percase≤300s/2GiB, overall≤1200s elapsed. Estimated200–250seconds; no promise ifnewrulefails. No silent rerun aftertwofailedstageattempts. Preservefailurediagnostics.
+
+Required preregistered application witnesses
+1. SameR/source/E/request at bothpriorities; Iidentical andcannotshrink withD.
+2. Drought-demand witness: R=100000L,E=40000L,request80000L,capacitylarge/initial0. EcologyD60000,T30000,R2a40000,R2b70000;irrigationD80000,T40000,R2a20000,R2b60000. AtR2a irrigation-issuedshortfall20000L(red);R2b meetsI because ofreturn. Exact sourceB chosencompatible5%loss foractualnativevariant.
+3. R2a target doesnot subtractreturn: controlledcounterexample differsfrompreviouspolicyintent.
+4. Unavoidable spill retained;storage buffering may meetinstruction despiteupstreamdiversion;zeroinput/zerostorage vsnonzerostorage knowncounts.
+5. Actual Koksu monthly/base/dry continuousvs3day statehandoff and exact previouslyproblematic2,835,616,800Lstock; canonicaladapter remains.
+6. Candidateindependence only forirrigation-first; ecologyfirstmay changeD acrossmethods/stressmode. Allprior20%cap assertions removed/replaced.
+7. Crosspriority yearlyidentity: ΔQout=-Δconsumption-Δfinalstorage forsameinputs/initialstock.
+8. Independent daily andannualwaterbalances; nativephysicalatR2a/R2b andFishy candidate/issued findings agree withindependently derivedcriteria/shortfalls. Differencesinoperatorissueddelivery mustnotbehiddenby downstreamreturns orrecomputedI.
+9. Allsource/target/mode identities correct; samecandidatesandI acrosspriorities; allfourcompletefiles and16supervisorresults underdeclaredlimits. No observedcalendar-year, habitatadequacy, ecologicalstatus orlegalfault claims.

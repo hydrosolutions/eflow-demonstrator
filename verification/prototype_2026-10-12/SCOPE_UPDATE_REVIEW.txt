@@ -1,0 +1,13 @@
+BOUNDED INDEPENDENT REVIEW — method scope update, 12 October 2026
+Outcome: PASS. No actionable wording or report-fidelity finding within the authorised edit scope.
+
+Reviewed live app.js, calculated-view.js and styles.css against saved previous versions. Both JavaScript files pass node --check. Independently verified all eight numerical JSON SHA256 values unchanged against NUMERICAL_HASHES_BEFORE.json. No report source or scientific calculation was edited by this reviewer.
+
+1. Visible comparison scope is now explicit: “Three illustrative components”; parts of methods, not complete regimes; evidence determines the applicable route. Row subtitles distinguish assumed-Q347 floor, annual-shift component and published baseflow with no modelled habitat. This preserves comparison without presenting it as an eligibility choice.
+2. Swiss text is understandable and accurate: using the floor as a hypothetical release target demonstrates downstream consequences; it does not establish the report's delivery obligation, and the separate abstraction/withholding check is not performed. This explains the distinction without discrediting the authorised arithmetic or changing the traffic lights. Shared function appears only in Swiss detail and the separate Assessment view, not duplicated panels within one view.
+3. Six object-specific assessment records replace the old System definition list. Each states route, calculation, missing evidence and proposed next step. R1 is routing only, R2 is hypothetical delivery, S1 retains default natural/status pending valid designation, C1/D1 remain artificial with no ecological/quality adequacy claim, and W1 remains uncalculated with unknown pathways. No wetland connection or target is invented.
+4. Next-step assignments are headed “proposed”; NCECC review is distinguished from the unspecified competent authority's designation decision. These are workflow suggestions, not new statutory powers or claims that an approving authority has already acted.
+5. The five-year recommendation is unchanged, as explicitly instructed by the user. The previously identified three-versus-five-year conflict in the live report remains a separate source issue; this UI change does not claim to resolve it or rewrite the statutory plan cycle.
+6. The scope note and compact record use existing comparison and System panels. No new page, topology, numerical scenario, repeated dashboard or eligibility engine has been introduced.
+
+Limits: source/wording and unchanged-numerics review only. Root owns the final rendered desktop/mobile layout check. Earlier broader omissions outside the approved scope are not reopened here.

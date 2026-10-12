@@ -1,0 +1,33 @@
+{
+  "status": "bounded_final_ui_source_review_passed_download_receipt_unverified",
+  "reviewer": "demo_method_review",
+  "scope": [
+    "Final chart strokes: wide gold issued beneath dashed orange actual, with exact coincidence notice",
+    "Deliverability label explicitly after allocation",
+    "Cache revision URLs and script load order"
+  ],
+  "findings": [],
+  "scientificEffect": "Presentation only; numerical engine, addondata, original native source and reviewed tests match previously recorded science hashes",
+  "checks": [
+    "guided.js Node syntax passed",
+    "Actual equality guard controls coincidence note; no ecological adequacy inference",
+    "Required overlap DOM element present; script order data\u2192engine\u2192UI",
+    "Revised cache URLs separate new engine/data and UI from prior cached resources"
+  ],
+  "hashes": {
+    "guided.html": "36f19d4aa292e1eb866ac17e2645f4f53453c87be543635b2afb03a04159a572",
+    "guided.js": "b78aa97091e3497cc7d7b62046f9bc09673172e8808a3528b549b567d3460138",
+    "guided.css": "1ae30d2209c6b9f78f9f8152ddbfe237dbc1d7f7acf648be72ea6b38b9ac6c6a",
+    "guided-engine.js": "9430efc2eb3f71f4e70d2ecd991679a53198967983e8aa1ed8ce521479303bec",
+    "data/guided.json": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "data/guided-data.js": "d6eb7c3717fa915f0bcc31e939cd8ba8d8aa2be6ab1561ddc344eb7136b0211b",
+    "data/guided-sharing.json": "3cda18004281eb7625588148aa4c832d80b3abf540cd429c6e0ef1cd14f8e4cc",
+    "data/guided-sharing.js": "a0e941088152b336450874dc4ddc49774b457fa4a23f2b4d0d6efced997faea5",
+    "native/guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+    "native/sharing_model.py": "12127c17f32e28724d9e1d63290f9549f77a7ccd2cd64ca8e1c2812d332dff87"
+  },
+  "browserEvidence": "Parent reports latest labels/overlap, sharing/forcing reset, URL persistence and displayed JSON verified; screenshot inspection pending parent final review. Reviewer did not take over browser.",
+  "downloadReceipt": "Unverified; not retried. No full browser/export or release acceptance claimed.",
+  "existingScienceReview": "SCIENCE_APPLICATION_REVIEW.json unchanged;43application tests previously passed",
+  "nativeReruns": 0
+}
