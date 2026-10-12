@@ -1,0 +1,62 @@
+{
+  "scope": "Presentation-layer Russian and Uzbek Latin localization of the current calculated prototype. No changes to numerical artifacts or scientific scope.",
+  "source_files": {
+    "controlled-terms.json": {
+      "sha256": "9518b7a2107730779d92c94c78c2c727da7930bc0491233dab4a9843951da869"
+    },
+    "appendices.qmd": {
+      "sha256": "836df589b3cbea95f0e7372ce2a6a992ff8fbce3d246768fc7c53d8bc3d73be1"
+    },
+    "uz_water_code_2025_uz.txt": {
+      "sha256": "44a4273f7ea51514f17630e7671867a10725864ec337a996de62edef5ed7daed"
+    },
+    "uz_water_code_2025_ru.txt": {
+      "sha256": "8643ead524666b2c6502c9b2c284b853d4dc06fe6e51721df4b4cdc64d7d26ca"
+    }
+  },
+  "source_checks": [
+    "Controlled registry report hash matches live appendices.qmd.",
+    "Controlled registry Uzbek Code hash matches held official Uzbek Latin Code.",
+    "Russian and Uzbek Article 4 water-body definitions checked in held parallel Code texts.",
+    "Article 122 sanitary and ecological release labels checked in both held Code languages.",
+    "Russian hydrology labels checked against current Appendix B.9 WMO terminology."
+  ],
+  "meaning_requirements": [
+    "Keep ecological target distinct from operating instruction and modelled delivery.",
+    "Keep water body distinct from calculation section, model reach and junction.",
+    "Retain hypothetical network, assumed dry forcing and source-study-only habitat interpretation.",
+    "Retain full review within five years as selected by project lead.",
+    "Do not imply official legal or professional translation approval."
+  ],
+  "acceptance_checks": [
+    "All rendered text and accessibility labels translated across three views, three methods, all bodies, scenarios and priorities.",
+    "Language switch and shared URL retain scenario state.",
+    "Model artifacts, numerical outputs, chart geometry and colour statuses unchanged.",
+    "Russian and Uzbek desktop and narrow layout inspected.",
+    "Independent translation/meaning review and correction of findings."
+  ],
+  "status": "passed_after_independent_review",
+  "unchanged_numerical_files": {
+    "calculated-data.js": true,
+    "flow-status.js": true,
+    "comparison-ecology.json": true,
+    "comparison-irrigation.json": true,
+    "comparison-stress-ecology.json": true,
+    "comparison-stress-irrigation.json": true,
+    "targets.json": true,
+    "targets-stress.json": true
+  },
+  "validation": {
+    "automated": "node --test tests/prototype-*.cjs: 14 passed (13 substantive tests plus fixture module)",
+    "browser": [
+      "Russian and Uzbek desktop comparison, network and method-detail renders inspected.",
+      "Uzbek assessment confirms target/instruction/delivery and five-year review.",
+      "640px RU System and Uzbek Assessment: no document horizontal overflow after responsive fix.",
+      "Switching language preserves scenario controls, chart path geometry, numerical labels and status colours.",
+      "Fixed normal-year target stress-test retained across Uzbek→Russian switch.",
+      "Browser console has no errors."
+    ],
+    "independent_review": "LANGUAGE_REVIEW.json: all 269 phrase pairs reviewed; five findings corrected.",
+    "limitations": "Agent semantic review, not professional translation or legal certification. Native numerical results reused unchanged."
+  }
+}
