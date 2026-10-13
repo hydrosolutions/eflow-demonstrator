@@ -1078,3 +1078,108 @@ globalThis.PrototypeCatalog = {
     "Oylik oʻrtachalar; kunlik xulosalar barcha {0} qiymatdan foydalanadi."
   ]
 };
+
+Object.assign(globalThis.PrototypeCatalog, {
+  "Salt concentration": [
+    "Концентрация соли",
+    "Tuz konsentratsiyasi"
+  ],
+  "Not calculated": [
+    "Не рассчитано",
+    "Hisoblanmagan"
+  ],
+  "Flow-weighted monthly mean": [
+    "Среднее за месяц, взвешенное по расходу",
+    "Oqim boʻyicha vaznlangan oylik oʻrtacha"
+  ],
+  "Above illustrative salt limit": [
+    "Выше условного предела по соли",
+    "Shartli tuz chegarasidan yuqori"
+  ],
+  "Within illustrative salt limit": [
+    "В пределах условного ограничения по соли",
+    "Shartli tuz chegarasi doirasida"
+  ],
+  "Undefined without flow": [
+    "Не определено при отсутствии стока",
+    "Oqim boʻlmaganda aniqlanmaydi"
+  ],
+  "Some days undefined or unassessed": [
+    "В отдельные дни не определено или не оценено",
+    "Ayrim kunlarda aniqlanmagan yoki baholanmagan"
+  ],
+  "{0}/{1} days above salt limit · {2} dry days": [
+    "{0}/{1} дней выше предела по соли · {2} дней без стока",
+    "{0}/{1} kun tuz chegarasidan yuqori · {2} kun oqimsiz"
+  ],
+  "{0} wet days unassessed": [
+    "{0} дней со стоком не оценено",
+    "Oqimli {0} kun baholanmagan"
+  ],
+  "Salt assumptions": [
+    "Допущения по соли",
+    "Tuzga oid farazlar"
+  ],
+  "The assumed inflow contains 180 mg/L of conservative salt. Irrigation returns half the diverted water and all its salt on the same day: 180 → 360 mg/L in D1 while it flows. No soil salt mobilisation or delay is represented. Natural exchange removes water and proportional salt.": [
+    "Принято, что входящий поток содержит 180 мг/л консервативной соли. В день отвода орошение возвращает половину воды и всю отведённую соль: в D1 при наличии стока концентрация возрастает со 180 до 360 мг/л. Вымывание соли из почвы и задержка возврата не моделируются. Естественный водообмен удаляет воду и пропорциональное количество соли.",
+    "Kiruvchi oqimda konservativ tuz miqdori 180 mg/L deb olingan. Sugʻorish ajratilgan suvning yarmini va undagi barcha tuzni shu kunning oʻzida qaytaradi: D1 oqimida konsentratsiya 180 dan 360 mg/L gacha oshadi. Tuproqdagi tuzning yuvilishi va kechikish hisobga olinmagan. Tabiiy suv almashinuvi suv va unga mutanosib tuzni olib chiqadi."
+  ],
+  "At R2b, the R2a river flow mixes with D1. Concentration is total salt mass divided by total water volume; concentrations are not added. More return flow can improve water delivery while increasing salt concentration.": [
+    "В R2b речной поток из R2a смешивается с D1. Концентрация равна общей массе соли, делённой на общий объём воды; концентрации не складываются. Увеличение возвратного стока может улучшить подачу воды и одновременно повысить концентрацию соли.",
+    "R2b da R2a daryo oqimi D1 bilan aralashadi. Konsentratsiya umumiy tuz massasining umumiy suv hajmiga nisbatidir; konsentratsiyalar qoʻshilmaydi. Qaytma oqim koʻpayishi suv yetkazilishini yaxshilashi va ayni paytda tuz konsentratsiyasini oshirishi mumkin."
+  ],
+  "The 250 mg/L salt limit is illustrative, not an adopted standard or measured Koksu chemistry. The monthly concentration is volume weighted; the salt finding uses every daily Fishy result. Dry days have no defined concentration and never count as passing. Salt findings do not change the flow target or establish ecological status.": [
+    "Предел по соли 250 мг/л принят для иллюстрации; это не утверждённый норматив и не измеренный химический состав воды Коксу. Среднемесячная концентрация взвешена по объёму; оценка соли использует все суточные результаты Fishy. В дни без стока концентрация не определена, и такие дни не считаются соответствующими пределу. Результаты по соли не меняют целевой расход и не устанавливают экологическое состояние.",
+    "Tuzning 250 mg/L chegarasi misol uchun olingan; u tasdiqlangan meʼyor yoki Koʻksu suvining oʻlchangan kimyoviy tarkibi emas. Oylik konsentratsiya hajm boʻyicha vaznlangan; tuz bahosi Fishy ning barcha kunlik natijalariga asoslanadi. Oqimsiz kunlarda konsentratsiya aniqlanmaydi va ular chegaraga mos deb hisoblanmaydi. Tuz natijalari maqsadli oqimni oʻzgartirmaydi va ekologik holatni belgilamaydi."
+  ],
+  "Download salt results and provenance": [
+    "Скачать результаты по соли и сведения об их происхождении",
+    "Tuz natijalari va kelib chiqish maʼlumotlarini yuklab olish"
+  ],
+  "Advanced basin explorer · separate example": [
+    "Расширенный обзор бассейна · отдельный пример",
+    "Havzaning kengaytirilgan koʻrinishi · alohida misol"
+  ],
+  "Salt assessment · R2b": [
+    "Оценка соли · R2b",
+    "Tuz bahosi · R2b"
+  ],
+  "Illustrative salt limit": [
+    "Условный предел по соли",
+    "Shartli tuz chegarasi"
+  ],
+  "Salt exceedance days · selected month": [
+    "Дни превышения предела по соли · выбранный месяц",
+    "Tuz chegarasidan oshgan kunlar · tanlangan oy"
+  ],
+  "Salt exceedance days · full year": [
+    "Дни превышения предела по соли · весь год",
+    "Tuz chegarasidan oshgan kunlar · toʻliq yil"
+  ],
+  "Dry days · concentration undefined · full year": [
+    "Дни без стока · концентрация не определена · весь год",
+    "Oqimsiz kunlar · konsentratsiya aniqlanmaydi · toʻliq yil"
+  ],
+  "Wet days unassessed · full year": [
+    "Дни со стоком без оценки · весь год",
+    "Baholanmagan oqimli kunlar · toʻliq yil"
+  ],
+  "Salt is assessed separately against an illustrative 250 mg/L daily limit. Concentration is a flow-weighted monthly mean; counts show daily exceedances and days without flow.": [
+    "Соль оценивается отдельно по условному суточному пределу 250 мг/л. Концентрация — среднее за месяц, взвешенное по расходу; счётчики показывают дни превышения и дни без стока.",
+    "Tuz alohida, 250 mg/L shartli kunlik chegara boʻyicha baholanadi. Konsentratsiya oqim boʻyicha vaznlangan oylik oʻrtachadir; sonlar chegaradan oshgan va oqimsiz kunlarni koʻrsatadi."
+  ],
+  "Assumed 50% same-day return; conservative salt transport is assessed separately.": [
+    "Принят возврат 50% воды в тот же день; перенос консервативной соли оценивается отдельно.",
+    "Suvning 50% qismi shu kuni qaytadi deb olingan; konservativ tuz koʻchishi alohida baholanadi."
+  ]
+});
+
+Object.assign(globalThis.PrototypeCatalog, {
+  "Monthly means. Day counts below identify their assessment period.": ["Средние за месяц. Для числа дней ниже указан период оценки.", "Oylik oʻrtacha qiymatlar. Quyidagi kun sonlari uchun baholash davri koʻrsatilgan."],
+  "Modelled delivery and conservative salt at R2a and R2b.": ["Моделируемая подача воды и консервативная соль в R2a и R2b.", "R2a va R2b da modellashtirilgan suv yetkazilishi va konservativ tuz."]
+});
+
+Object.assign(globalThis.PrototypeCatalog, {
+  "Illustrative salt limit: 250 mg/L · daily mean": ["Условный предел по соли: 250 мг/л · среднее за сутки", "Shartli tuz chegarasi: 250 mg/L · kunlik oʻrtacha"],
+  "Investigate salt sources and reduce salt inputs. Dilution lowers concentration but does not remove salt; it does not automatically justify a higher flow target.": ["Выявляйте источники соли и сокращайте её поступление. Разбавление снижает концентрацию, но не удаляет соль; само по себе оно не обосновывает повышение целевого расхода.", "Tuz manbalarini aniqlang va tuz kirishini kamaytiring. Suyultirish konsentratsiyani pasaytiradi, ammo tuzni olib tashlamaydi; bu maqsadli oqimni oshirish uchun avtomatik asos boʻlmaydi."]
+});

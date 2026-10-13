@@ -1,0 +1,82 @@
+{
+  "version": "prototype-quality-v1",
+  "decision": "Restore conservative salt assessment in existing simple topology; keep original basin explorer optional and separate.",
+  "scope": [
+    "Same topology, forcing, water targets and operation policies",
+    "Native Taqsim salt transport and Fishy daily quality assessment",
+    "Independent flow and salt findings at R2a/R2b",
+    "EN/RU/Uzbek Latin UI, no new navigation or duplicated panels"
+  ],
+  "assumptions": {
+    "boundarySaltMgL": 180,
+    "limitMgL": 250,
+    "saltQuantumKg": "0.000001",
+    "returnFraction": 0.5,
+    "saltFate": "Natural exchange carries proportional mixed salt; irrigation consumption removes water only; all diverted salt returns; no soil salt mobilisation or delay.",
+    "status": "Hypothetical demonstration assumptions retained from original; not measured Koksu chemistry or an adopted standard."
+  },
+  "qualityFile": "prototype/quality.json",
+  "schema": {
+    "schemaVersion": "prototype-quality-v1",
+    "status": "admitted only after numerical review",
+    "criterion": {
+      "limitMgL": 250,
+      "comparison": "<=",
+      "applicability": "hypothetical",
+      "basis": "daily mean"
+    },
+    "assumptions": "object",
+    "cases": "object keyed operation:basis:forcing:method, where operation ecology|irrigation, basis matched|fixed, forcing normal|dry, method swiss|kazakh|site",
+    "case": {
+      "dates": "365 ISO dates identical to associated water case",
+      "sections": {
+        "r2a": "Section",
+        "r2b": "Section"
+      },
+      "drain": "Series",
+      "waterArtifactSha256": "associated comparison file hash",
+      "provenance": "native run/source/hash details",
+      "balances": "actual native closure evidence"
+    },
+    "Series": {
+      "flowM3s": "365 finite nonnegative numbers",
+      "saltKgDay": "365 finite nonnegative numbers",
+      "concentrationMgL": "365 nonnegative number or null for dry"
+    },
+    "Section": {
+      "flowM3s": "as Series",
+      "saltKgDay": "as Series",
+      "concentrationMgL": "as Series",
+      "rawFishy": "365 pass|fail|unknown; normalized dry findings unknown; preserve original raw elsewhere in provenance if different"
+    }
+  },
+  "ui": [
+    "Existing R2 cards: separate salt concentration and salt result, independent of flow traffic light",
+    "Show concentration as flow-weighted monthly mean; status from daily Fishy findings, show exceedance and dry-day counts",
+    "Existing Assessment view: monthly/annual salt exceedances, dry-day undefined counts and illustrative limit; assumptions in existing disclosure",
+    "If quality absent or invalid: Not calculated; water remains accessible",
+    "No salt-based automatic target increase, no combined ecological status, no temperature in this stage"
+  ],
+  "gates": [
+    "All existing water JSON bytes unchanged",
+    "Each rerun daily water ledger equals original water case",
+    "Daily/local/global native water and salt residuals zero, chunk inventory continuity",
+    "Independent oracle for storage, ET salt fate, return doubling and downstream mixing",
+    "Boundary test exactly250 passes, above fails; dry undefined; missing not pass",
+    "All24 displayed combinations covered, deduplicate only proven identical inputs",
+    "Actual case with met quantity and exceeded salt, plus irrigation-first dry June",
+    "All existing JS and relevant native tests; browser desktop/mobile in EN/RU/Uzbek; independent review"
+  ],
+  "limits": {
+    "perCaseSeconds": 300,
+    "perCaseRssBytes": 2147483648,
+    "aggregateSeconds": 1200
+  },
+  "excluded": [
+    "Temperature extension",
+    "Quality-based ecological flow sizing",
+    "Official water-quality or ecological status",
+    "Changing scientific report or presentation",
+    "Publishing or merging without later instruction"
+  ]
+}

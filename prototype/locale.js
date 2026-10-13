@@ -18,8 +18,9 @@
   if(/[A-Za-z]/.test(source)&&!literal(source))missing.add(source);
   return text;
  }
- function literal(text){return /^(?:[RCSWD]\d[ab]?|m³\/s|[\d., /%–≈+]+|[\d.,]+ (?:Mm³|m³\/s))$/.test(text);}
+ function literal(text){return /^(?:[RCSWD]\d[ab]?|m³\/s|[\d., /%–≈+]+|[\d.,]+ (?:Mm³|m³\/s|mg\/L)|— mg\/L)$/.test(text);}
  const templates=[
+  [/^(\w+) monthly means\. Day counts below identify their assessment period\.$/, (m,t)=>`${t(m[1])}: ${t("Monthly means. Day counts below identify their assessment period.")}`],
   [/^· (.+)$/, (m,t)=>`· ${t(m[1])}`],
   [/^(.+) ·$/, (m,t)=>`${t(m[1])} ·`],
   [/^(R[12](?:[ab])?|[CSDW]1) · (.+)$/, (m,t)=>`${m[1]} · ${t(m[2])}`],

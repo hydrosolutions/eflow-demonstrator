@@ -1,0 +1,8 @@
+{
+  "status": "admitted",
+  "candidateSha256": "3af8d06de90ef48c852636fe4b9a01748cb8213003f9a80c12e7d4e33079c4fb",
+  "admittedSha256": "cae29df32b44a04373a8df5f98bcd376cee96a21794ff7aa422342d366791271",
+  "change": "status candidate to admitted only",
+  "review": "INDEPENDENT_NUMERICAL_REVIEW.json",
+  "independentRootChecks": "24 cases match associated frozen water file hashes, dates, R2a/R2b water arrays; eight frozen inputs unchanged"
+}

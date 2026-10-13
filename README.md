@@ -1,6 +1,6 @@
 # E-flow workshop demonstrator
 
-For the current methodology presentation, open **[prototype/](prototype/)**. It compares illustrative method components using saved Taqsim/Fishy calculations, shows allocation priorities and separate river-section traffic lights, and records pending assessment evidence. See [prototype/README.md](prototype/README.md) for scope, sources and verification. This current prototype is English; the multilingual learning pages below are a separate earlier interface.
+For the current methodology presentation, open **[prototype/](prototype/)**. It compares illustrative method components using saved Taqsim/Fishy calculations, shows allocation priorities, separate flow-delivery and salt-quality findings at the two river sections, and pending assessment evidence. See [prototype/README.md](prototype/README.md) for scope, sources and verification. The current prototype is available in English, Russian and Uzbek Latin; the learning pages below are a separate earlier interface.
 
 ## Earlier learning and guided interfaces
 

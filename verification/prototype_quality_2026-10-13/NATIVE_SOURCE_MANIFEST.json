@@ -1,0 +1,18 @@
+{
+  "files": {
+    "native/koksu/native_quality.py": "abcb7826304ef96316892253774315059b7600694a90596eca4599e42e13d636",
+    "native/koksu/build_quality.py": "074b759c388cf935c390297bff6bf824835a1a0d42d11b9635796fc3d5e0de38",
+    "native/koksu/test_native_quality.py": "88be616dfbd78c61a4503341132f4209cb31f2841c2eaefb5dd28e100fb828bc",
+    "native/koksu/QUALITY_README.md": "460fa8c916bb9ef4a0f2cd3b185a22be4b352fd2077845f2f89150a69e20a8bf"
+  },
+  "testResults": {
+    "allRelevantNativeTests": {
+      "passed": 21,
+      "seconds": 3.0
+    },
+    "qualityTestsAfterTypeAnnotations": {
+      "passed": 6
+    }
+  },
+  "qualityStatus": "candidate_pending_independent_review"
+}
