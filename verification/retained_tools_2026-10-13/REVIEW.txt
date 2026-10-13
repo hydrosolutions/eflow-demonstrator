@@ -1,0 +1,12 @@
+Retained demonstrator interfaces — 2026-10-13
+
+Scope: current prototype, methods playground and separate advanced basin example.
+Retired public applications: learn.html, guided.html, assessment.html; source and tests preserved.
+
+Independent review: passed. Playground scope checked against live report. Quality-driven flow uplift explicitly not activated. Computational artifacts and advanced inline model preserved. Numerical JSON and engines additionally hash-checked against origin/main; see unchanged_calculations.json.
+
+Validation: original 86 application checks passed before edits; expanded suite 89 passed, then fourth navigation regression passed (90 total cases). Seven publication tests pass. JSON copy integrity, allowlist, retired notices, local links and old basin redirects checked. No new native runs required.
+
+Browser checks on generated _site served at port8782: EN playground controls and expanded four-hydrograph comparison; RU method/language roundtrip with dry forcing, irrigation priority and June preserved; no slider operand transfer; advanced example and corrected method return; Uzbek 390px mobile layout; Uzbek retired URL with old case parameters shows explicit notice. No browser console errors in inspected flow.
+
+Publication requires GitHub Pages workflow source, not main/root. Evidence/source/test directories are excluded from the public site. Translation professional approval remains pending as before.

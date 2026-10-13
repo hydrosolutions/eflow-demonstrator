@@ -1,0 +1,11 @@
+{
+  "prototype/comparison-irrigation.json": "7037caba6f2620bb9d35b3571ac5a10c4b2b2f852da1aae0d2a9e8ffbdce599e",
+  "prototype/targets.json": "31df113323d8449001fc1996ee748605bd661d25346f4bb250648049ad4aac1a",
+  "prototype/quality.json": "cae29df32b44a04373a8df5f98bcd376cee96a21794ff7aa422342d366791271",
+  "prototype/comparison-ecology.json": "72d677a1f721adcdf999fa5748f112e954d12a992c1be9d87d0a4cd629134ce0",
+  "prototype/comparison-stress-ecology.json": "77089535aaa036576ad410885449aa5aed956b6a3a18c7a8fa12be70ac5f85ba",
+  "prototype/targets-stress.json": "df41cf640fd869776bf8c5efa01e859c234b8e1e7dc70de912bf153e3ab437cc",
+  "prototype/comparison-stress-irrigation.json": "0fda9710f2379065fee1cbea1df89d203be4fcb6731b39fd77c098f006a243f3",
+  "playground-engine.js": "fb3b7b82adf8ceb5b2c0abfe5468811136ce7c3e246b6b6f354bda9bbb000212",
+  "assessment-engine.js": "5f6edf42abd687a4dd237c41b9979a7aa5f932f4a732eecf97e66478b592706f"
+}

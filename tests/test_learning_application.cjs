@@ -155,7 +155,7 @@ test('learning calculations leave caller-owned evidence unchanged', () => {
 
 test('saved original numerical evidence retains its frozen bytes', () => {
   const app = path.resolve(__dirname, '..');
-  const baseline = JSON.parse(fs.readFileSync(path.resolve(app, '../learning_implementation_2026-10-04/BASELINE.json'), 'utf8'));
+  const baseline = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures/learning-baseline-2026-10-04.json'), 'utf8'));
   for (const [relative, expected] of Object.entries(baseline.hashes)) {
     const actual = crypto.createHash('sha256').update(fs.readFileSync(path.join(app, relative))).digest('hex');
     assert.equal(actual, expected, `Frozen scientific input or method changed: ${relative}`);

@@ -15,6 +15,6 @@ test('quality absence or invalid identity preserves the water chart and shows no
 });
 test('existing assessment and detail expose salt assumptions without changing network or navigation',()=>{
  const r=renderer().withQuality();const html=r.render({view:'assessment'});assert.match(html,/Salt exceedance days · selected month/);assert.match(html,/Salt exceedance days · full year/);assert.match(html,/Dry days · concentration undefined · full year/);
- const detail=r.render({view:'compare',detail:true});assert.match(detail,/180 → 360 mg\/L/);assert.match(detail,/concentrations are not added/);assert.match(detail,/Dilution lowers concentration but does not remove salt/);assert.match(detail,/Advanced basin explorer · separate example/);
+ const detail=r.render({view:'compare',detail:true});assert.match(detail,/180 → 360 mg\/L/);assert.match(detail,/concentrations are not added/);assert.match(detail,/Dilution lowers concentration but does not remove salt/);assert.match(detail,/Advanced basin example · separate example/);
  const before=r.render({view:'system',landscape:'network'}).match(/<svg class="system-figure"[\s\S]*?<\/svg>/)[0];vm.runInContext('qualityData=null;',r.context);const after=r.render({view:'system',landscape:'network'}).match(/<svg class="system-figure"[\s\S]*?<\/svg>/)[0];assert.equal(after,before);
 });

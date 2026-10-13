@@ -1,6 +1,6 @@
 # Methodology comparison prototype
 
-Serve the repository root with `python3 -m http.server 8780 --bind 127.0.0.1`, then open `http://127.0.0.1:8780/prototype/`.
+Build the selected public site with `python3 scripts/build_site.py`, then serve `_site/` with `python3 -m http.server 8780 --bind 127.0.0.1 --directory _site` and open `http://127.0.0.1:8780/prototype/`.
 
 Compare the Swiss-derived illustrative floor, Kazakh annual-shift component and published Koksu snow-trout baseflow. Switch normal/dry forcing and ecology-first/upstream-irrigation-first operation. System shows the same topology and separate R2a/R2b delivery checks before/after drainage returns; each object has a compact assessment-basis record. Review remains five years, with annual record maintenance and earlier reassessment when evidence changes, as explicitly selected by the project lead.
 
@@ -10,7 +10,7 @@ These are illustrative components, not complete interchangeable assessment metho
 
 The language selector offers English, Russian and Uzbek Latin. An explicit `lang=en`, `lang=ru` or `lang=uz-Latn` URL parameter takes precedence over the saved browser preference. Switching language preserves the selected object, method, scenario, allocation priority, month and detail state. Numerical data and source files remain unchanged.
 
-`locale-catalog.js` contains exact phrase pairs; `locale.js` applies those phrases and anchored dynamic templates only to display text and accessible labels. Terms follow `../controlled-terms.json`: source-exact Uzbek Code labels, WMO Russian hydrological labels and provisional report-method language retain their distinct status. Additional UI translations are provisional and await professional approval; no official legal approval is claimed. The earlier multilingual learning pages remain separate products with separate datasets. Their assumptions must not be transferred to this prototype.
+`locale-catalog.js` contains exact phrase pairs; `locale.js` applies those phrases and anchored dynamic templates only to display text and accessible labels. Terms follow `../controlled-terms.json`: source-exact Uzbek Code labels, WMO Russian hydrological labels and provisional report-method language retain their distinct status. Additional UI translations are provisional and await professional approval; no official legal approval is claimed. The methods playground and advanced basin example remain separate public tools with separate datasets. Their assumptions must not be transferred to this prototype; earlier learning and guided applications are retained only as repository sources.
 
 Verification: `node --test tests/prototype-*.cjs` from the repository root. Sixteen annual native cases and independent review preceded publication; detailed original physical chunks remain in the local project audit. Archived review files preserve original local evidence references and some findings superseded by the scope update; the current implementation and `SCOPE_UPDATE_REVIEW.txt` record those explanations. No claim of current upstream-main versions or large-basin continuous-run performance is made.
 
@@ -24,4 +24,4 @@ Displayed monthly concentration is total salt mass divided by total flowing wate
 
 Suggested illustration: **Dry → Snow trout study → Ecology first → June**. Compare R2a before the drain with R2b after it. Quantity can meet its illustrative target while salt exceeds its separate illustrative limit. Increasing dilution does not remove salt; a real application must investigate and control its sources. This screen assesses an assumed limit; it does not activate the report's dormant quality-based flow-sizing module or increase the ecological target automatically.
 
-Temperature remains in the optional [advanced basin explorer](../index.html), which is a separate synthetic example with different topology and assumptions. No thermal result from it is transferred to this prototype.
+Temperature remains in the optional [advanced basin explorer](https://hydrosolutions.github.io/eflow-demonstrator/advanced.html), which is a separate synthetic example with different topology and assumptions. No thermal result from it is transferred to this prototype.

@@ -1183,3 +1183,70 @@ Object.assign(globalThis.PrototypeCatalog, {
   "Illustrative salt limit: 250 mg/L · daily mean": ["Условный предел по соли: 250 мг/л · среднее за сутки", "Shartli tuz chegarasi: 250 mg/L · kunlik oʻrtacha"],
   "Investigate salt sources and reduce salt inputs. Dilution lowers concentration but does not remove salt; it does not automatically justify a higher flow target.": ["Выявляйте источники соли и сокращайте её поступление. Разбавление снижает концентрацию, но не удаляет соль; само по себе оно не обосновывает повышение целевого расхода.", "Tuz manbalarini aniqlang va tuz kirishini kamaytiring. Suyultirish konsentratsiyani pasaytiradi, ammo tuzni olib tashlamaydi; bu maqsadli oqimni oshirish uchun avtomatik asos boʻlmaydi."]
 });
+
+Object.assign(globalThis.PrototypeCatalog, {
+  "Demonstrator": [
+    "Демонстратор",
+    "Namoyish modeli"
+  ],
+  "Public tools": [
+    "Инструменты",
+    "Vositalar"
+  ],
+  "Methods playground": [
+    "Сравнение методов",
+    "Usullarni oʻrganish"
+  ],
+  "Advanced basin example · separate example": [
+    "Расширенный пример бассейна · отдельный пример",
+    "Havzaning kengaytirilgan misoli · alohida misol"
+  ],
+  "Explore the method assumptions →": [
+    "Изучить допущения методов →",
+    "Usullar farazlarini oʻrganish →"
+  ],
+  "· Synthetic requirements there; saved network operations here.": [
+    "· Там — синтетические требования; здесь — сохранённые расчёты работы сети.",
+    "· U yerda sintetik talablar; bu yerda tarmoq ishining saqlangan hisoblari."
+  ],
+  "If measurement uncertainty spans a criterion, the finding can remain indeterminate. Changing allocation priorities does not test uncertainty in the natural reference; that needs a separate assessment. These examples do not propagate uncertainty.": [
+    "Если диапазон неопределённости измерений пересекает критерий, вывод может оставаться неопределённым. Изменение приоритетов распределения не проверяет неопределённость естественного эталонного режима; для этого нужна отдельная оценка. В этих примерах распространение неопределённости не рассчитывается.",
+    "Agar oʻlchov noaniqligi oraligʻi mezon chegarasini kesib oʻtsa, xulosa noaniq qolishi mumkin. Taqsimot ustuvorliklarini oʻzgartirish tabiiy etalon rejim noaniqligini tekshirmaydi; buning uchun alohida baholash kerak. Bu misollarda noaniqlik tarqalishi hisoblanmaydi."
+  ],
+  "Explore synthetic requirements here; compare saved network operations in the demonstrator. Slider values do not transfer into those results.": [
+    "Здесь исследуются синтетические требования; в демонстраторе сравниваются сохранённые расчёты работы сети. Значения регуляторов в эти результаты не переносятся.",
+    "Bu yerda sintetik talablarni oʻrganing; namoyish modelida tarmoq ishining saqlangan hisoblarini taqqoslang. Sozlagich qiymatlari ushbu natijalarga oʻtkazilmaydi."
+  ],
+  "Method to follow into the network": [
+    "Метод для просмотра в сети",
+    "Tarmoqda koʻrish uchun usul"
+  ],
+  "See allocation effects in the network": [
+    "Посмотреть влияние распределения воды в сети",
+    "Suv taqsimotining tarmoqqa taʼsirini koʻrish"
+  ],
+  "Requirements stay visible when supply falls. Compare seasonal fit, shortfall days and habitat response.": [
+    "Требования остаются видимыми при снижении доступного стока. Сравните сезонное соответствие, число дней дефицита и реакцию местообитания.",
+    "Mavjud suv kamayganda talablar koʻrinib turadi. Mavsumiy moslik, tanqislik kunlari va yashash muhiti reaksiyasini taqqoslang."
+  ],
+  "Earlier workshop case": [
+    "Предыдущий учебный пример",
+    "Oldingi seminar misoli"
+  ],
+  "This earlier exercise uses a separate synthetic fixture. Its assessment tour is retired; no case settings are transferred into the current network.": [
+    "Этот прежний пример использует отдельный синтетический набор данных. Его пошаговая оценка снята с публикации; настройки примера в текущую сеть не переносятся.",
+    "Bu oldingi misol alohida sintetik maʼlumotlardan foydalanadi. Uning bosqichma-bosqich baholash sahifasi nashrdan olingan; misol sozlamalari joriy tarmoqqa oʻtkazilmaydi."
+  ],
+  "Open the current demonstrator": [
+    "Открыть текущий демонстратор",
+    "Joriy namoyish modelini ochish"
+  ],
+  "Open the current demonstrator assessment": [
+    "Открыть оценку в текущем демонстраторе",
+    "Joriy namoyish modelidagi baholashni ochish"
+  ],
+  "Quantity-only synthetic requirements. Quality-driven flow uplift is not activated; network allocation is demonstrated separately.": [
+    "Синтетические требования только к количеству воды. Повышение расхода по условиям качества не активировано; распределение воды в сети показано отдельно.",
+    "Faqat suv miqdoriga oid sintetik talablar. Suv sifati asosida sarfni oshirish faollashtirilmagan; tarmoqdagi suv taqsimoti alohida koʻrsatiladi."
+  ]
+});
