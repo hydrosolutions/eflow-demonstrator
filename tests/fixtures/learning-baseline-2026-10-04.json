@@ -1,0 +1,14 @@
+{
+  "commit": "8847dc97b0bad7083e3aea079182444162a37344",
+  "hashes": {
+    "data/guided.json": "bca46d26dbd62aa7570783901e7a9a055d83639d7ba11ba0762168cbda71a4ae",
+    "data/guided-data.js": "d6eb7c3717fa915f0bcc31e939cd8ba8d8aa2be6ab1561ddc344eb7136b0211b",
+    "data/guided-sharing.json": "3cda18004281eb7625588148aa4c832d80b3abf540cd429c6e0ef1cd14f8e4cc",
+    "data/guided-sharing.js": "a0e941088152b336450874dc4ddc49774b457fa4a23f2b4d0d6efced997faea5",
+    "playground-engine.js": "fb3b7b82adf8ceb5b2c0abfe5468811136ce7c3e246b6b6f354bda9bbb000212",
+    "native/guided_model.py": "0af451a52fad3d7fffb31c9e17add94974c173533879aae55b14c37d5a14b3df",
+    "native/sharing_model.py": "12127c17f32e28724d9e1d63290f9549f77a7ccd2cd64ca8e1c2812d332dff87",
+    "native/uv.lock": "1585f57b1f9e04c887d9b6bc05a5fb1fb3e0f211d0fd071aeed6e19b39034957"
+  },
+  "provenance": "Copied without regenerating hashes from learning_implementation_2026-10-04/BASELINE.json; original record created 2026-10-04, commit retained above."
+}

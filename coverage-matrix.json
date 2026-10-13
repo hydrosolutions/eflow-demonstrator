@@ -1,139 +1,149 @@
 {
-  "source": "appendix_computational_requirements.qmd \u2014 C.2 Checks for the nineteen required functions",
-  "scope": "Teaching coverage, not certification of operational capabilities",
+  "source": "appendix_computational_requirements.qmd — C.2 Checks for the nineteen required functions",
+  "scope": "Illustrative coverage of retained public tools, not certification of operational capabilities or full report implementation",
   "items": [
     {
       "number": 1,
       "concept": "Spatial mapping",
-      "placement": "core",
-      "learningLocation": "EX1",
-      "limit": "Fictional boundaries; not adopted plan or controlpoint"
+      "placement": "illustrated",
+      "limit": "Hypothetical water bodies and network; boundaries and designations are not officially adopted",
+      "publicLocation": "Demonstrator · System"
     },
     {
       "number": 2,
       "concept": "Water accounting",
-      "placement": "core",
-      "learningLocation": "EX3",
-      "limit": "Supplied one-day ledger and savednative balance; notfullbasin"
+      "placement": "illustrated",
+      "limit": "Saved model accounting, not a calibrated full-basin application",
+      "publicLocation": "Demonstrator · saved daily results; Advanced · detailed accounts"
     },
     {
       "number": 3,
       "concept": "Individual salt budgets",
-      "placement": "extension",
-      "learningLocation": "EX5",
-      "limit": "One conservative constituent; no complete chemicalinventory"
+      "placement": "illustrated",
+      "limit": "One conservative constituent with assumed sources and returns, not a complete chemical inventory",
+      "publicLocation": "Demonstrator · salt results and provenance; Advanced · salt accounts"
     },
     {
       "number": 4,
       "concept": "Natural daily reconstruction",
-      "placement": "core",
-      "learningLocation": "EX2 / savedcomparison",
-      "limit": "Synthetic reference; not two accepted realworld reconstructions"
+      "placement": "illustrated",
+      "limit": "Hypothetical comparison retains assumed natural losses; no accepted natural daily reconstruction",
+      "publicLocation": "Demonstrator · unmanaged comparison"
     },
     {
       "number": 5,
       "concept": "Glacier contribution",
-      "placement": "limitation",
-      "learningLocation": "modelroles",
-      "limit": "Explained role; no simulatedglacierdepletion"
+      "placement": "not implemented",
+      "limit": "Snow/glacier-melt seasonality is illustrated; glacier depletion is not simulated",
+      "publicLocation": "No retained calculation"
     },
     {
       "number": 6,
       "concept": "Branches and return routes",
-      "placement": "core",
-      "learningLocation": "EX3 / savedcomparison",
-      "limit": "Return routing under stated assumptions"
+      "placement": "illustrated",
+      "limit": "Diversion and same-day return routes use stated assumptions; wetland supply remains unestablished",
+      "publicLocation": "Demonstrator · System; Advanced · network"
     },
     {
       "number": 7,
       "concept": "Statistical adequacy",
-      "placement": "core",
-      "learningLocation": "EX2",
-      "limit": "Synthetic record; no observedrecordacceptance"
+      "placement": "limitation explained",
+      "limit": "Assumed quantiles and digitized monthly medians do not establish observed-record adequacy",
+      "publicLocation": "Demonstrator · method sources and limits"
     },
     {
       "number": 8,
       "concept": "Lookup table",
-      "placement": "core",
-      "learningLocation": "EX2entry",
-      "limit": "Fictional table; not adoptedSwiss/Uzbekstatutorycurve"
+      "placement": "illustrated",
+      "limit": "Illustrative parameters, not an adopted national or exact Swiss statutory curve",
+      "publicLocation": "Playground · entry component; Demonstrator · Swiss-derived floor"
     },
     {
       "number": 9,
       "concept": "Ecological assembly",
-      "placement": "core",
-      "learningLocation": "EX2baseline",
-      "limit": "Partial seasonal component; remaininglimbs pending"
+      "placement": "partial",
+      "limit": "Partial method components; full baseline bounds, biological corrections and complete ecological assembly are absent",
+      "publicLocation": "Demonstrator · Compare methods; Playground · method requirements"
     },
     {
       "number": 10,
       "concept": "Canal conveyance",
-      "placement": "extension",
-      "learningLocation": "canal",
-      "limit": "Supplied rectangular hydraulic example; notiterative sitevalidation"
+      "placement": "not implemented",
+      "limit": "No current public hydraulic conveyance-sizing calculation",
+      "publicLocation": "Retired source exercises only"
     },
     {
       "number": 11,
       "concept": "Traceability",
-      "placement": "core",
-      "learningLocation": "EX6export",
-      "limit": "Versioned teachingrecords"
+      "placement": "illustrated",
+      "limit": "Versioned saved evidence, not an adopted river-basin planning record",
+      "publicLocation": "Demonstrator · daily results and derivations; Advanced · saved passport"
     },
     {
       "number": 12,
       "concept": "Independent check balance",
-      "placement": "core",
-      "learningLocation": "EX6",
-      "limit": "Concept and evidencegates; no independent fieldmeasurements"
+      "placement": "model evidence",
+      "limit": "Numerical accounting checks do not substitute for independent field measurements",
+      "publicLocation": "Repository verification; retained saved balance results"
     },
     {
       "number": 13,
       "concept": "Separate findings",
-      "placement": "core",
-      "learningLocation": "EX6",
-      "limit": "Suppliedcriteria and uncertainty; noofficialcompliance"
+      "placement": "illustrated",
+      "limit": "Flow delivery and salt quality are separate; no legal fault or ecological status is inferred",
+      "publicLocation": "Demonstrator · Assessment"
     },
     {
       "number": 14,
       "concept": "Scenario comparison",
-      "placement": "core",
-      "learningLocation": "EX3 / EX4",
-      "limit": "Saved synthetic choices; notoptimisation"
+      "placement": "illustrated",
+      "limit": "Saved native network cases and separate browser requirement calculations; no online optimization or slider-to-network rerun",
+      "publicLocation": "Demonstrator · forcing and operating priority; Playground · assumptions"
     },
     {
       "number": 15,
       "concept": "Flow alteration",
-      "placement": "extension",
-      "learningLocation": "savedbasin",
-      "limit": "Physicalmetrics not biologicalrecovery/status"
+      "placement": "illustrated",
+      "limit": "Physical alteration does not establish biological recovery or ecological status",
+      "publicLocation": "Demonstrator · natural/managed comparison; Advanced · comparison"
     },
     {
       "number": 16,
       "concept": "Habitat",
-      "placement": "extension",
-      "learningLocation": "EX2top",
-      "limit": "Hypotheticalhabitatelement notcalibratedstudy"
+      "placement": "illustrated",
+      "limit": "Published baseflows and exact habitat points are transferred for illustration; no local WUA calculation or calibration",
+      "publicLocation": "Playground · synthetic habitat response; Demonstrator · published snow-trout points"
     },
     {
       "number": 17,
       "concept": "Groundwater",
-      "placement": "limitation",
-      "learningLocation": "modelroles / wetland",
-      "limit": "Exchangeconcept explained; nocoupledMODFLOWrun"
+      "placement": "not implemented",
+      "limit": "No coupled MODFLOW run or established groundwater supply to the wetland",
+      "publicLocation": "Demonstrator · pending evidence and wetland connection"
     },
     {
       "number": 18,
       "concept": "Salt transport / quality flow",
-      "placement": "extension",
-      "learningLocation": "EX5 / savedbasin",
-      "limit": "Mixing/transport doesnotactivate five-gatedqualityflow"
+      "placement": "partial",
+      "limit": "Conservative mixing and daily quality checks do not activate the report’s gated quality-based flow-sizing module",
+      "publicLocation": "Demonstrator · salt quality; Advanced · salt transport"
     },
     {
       "number": 19,
       "concept": "Release temperature",
-      "placement": "extension",
-      "learningLocation": "savedbasin",
-      "limit": "External thermaldiagnostics notvalidatedstratifiedoutletmodel"
+      "placement": "illustrated",
+      "limit": "External fully mixed thermal diagnostics; no validated stratification, selective outlet or ecological thermal criterion",
+      "publicLocation": "Advanced · reservoir and cooling temperature"
     }
+  ],
+  "publicTools": {
+    "demonstrator": "prototype/",
+    "playground": "playground.html",
+    "advanced": "advanced.html"
+  },
+  "retiredPublicInterfaces": [
+    "learn.html",
+    "guided.html",
+    "assessment.html"
   ]
 }
