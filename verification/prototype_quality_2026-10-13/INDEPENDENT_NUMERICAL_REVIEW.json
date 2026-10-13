@@ -1,0 +1,155 @@
+{
+  "status": "PASS",
+  "scope": "Independent numerical and method-fit review; UI/browser review is separate",
+  "candidateQualitySha256": "3af8d06de90ef48c852636fe4b9a01748cb8213003f9a80c12e7d4e33079c4fb",
+  "counts": {
+    "uniqueNativeRuns": 14,
+    "displayedCases": 24,
+    "nativeDays": 5110,
+    "physicalChunks": 1708,
+    "integerBalanceEquations": 91980,
+    "dailyNativeSectionChecks": 10220,
+    "inventoryHandoffs": 1694,
+    "caseDailySectionChecks": 17520,
+    "frozenArtifactHashes": 8
+  },
+  "maximumRecomputedIntegerBalanceResidual": 0,
+  "frozenInputsUnchanged": true,
+  "normalFixedAliasesMatchUISelection": true,
+  "waterLedgersAndFlowsUnchanged": true,
+  "checks": [
+    "All native local and basin balance equations recomputed from physical artifacts",
+    "Salt inventories and all chunk handoffs checked against actual native storage",
+    "Daily loss, evaporation, diversion/return salt, mixed outlet mass and water checked independently",
+    "All daily concentrations and inclusive250mg/L findings independently recomputed",
+    "All24 display cases mapped to exact unchanged water artifacts and complete native ledgers",
+    "Native result and physical artifact hashes verified"
+  ],
+  "witnesses": [
+    {
+      "case": "ecology:matched:normal:swiss",
+      "date": "2011-04-16",
+      "issuedM3s": 0.6375,
+      "r2aM3s": 0.8040972222222222,
+      "r2bM3s": 1.328298611111111,
+      "r2bSaltMgL": 251.03542020650895,
+      "qualityFinding": "fail",
+      "deliveryFinding": "pass"
+    },
+    {
+      "case": "irrigation:matched:dry:swiss",
+      "date": "2021-06-01",
+      "issuedM3s": 0.6375,
+      "r2aM3s": 0.0,
+      "r2bM3s": 0.7125,
+      "r2bSaltMgL": 360.0,
+      "qualityFinding": "fail",
+      "deliveryFinding": "pass"
+    }
+  ],
+  "irrigationFirstDryJune": [
+    {
+      "case": "irrigation:matched:dry:swiss",
+      "section": "r2a",
+      "month": "June",
+      "flowWeightedConcentrationMgL": null,
+      "exceedanceDays": 0,
+      "dryDays": 30
+    },
+    {
+      "case": "irrigation:matched:dry:swiss",
+      "section": "r2b",
+      "month": "June",
+      "flowWeightedConcentrationMgL": 360.0,
+      "exceedanceDays": 30,
+      "dryDays": 0
+    }
+  ],
+  "runSummary": {
+    "irrigation-matched-dry-site": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 194,
+      "r2aDryDays": 46,
+      "r2bDryDays": 0
+    },
+    "irrigation-fixed-dry-kazakh": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 189,
+      "r2aDryDays": 126,
+      "r2bDryDays": 0
+    },
+    "irrigation-matched-normal-swiss": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 149,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "irrigation-matched-normal-kazakh": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 127,
+      "r2aDryDays": 13,
+      "r2bDryDays": 0
+    },
+    "ecology-matched-normal-swiss": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 146,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "ecology-matched-normal-kazakh": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 0,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "irrigation-matched-normal-site": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 146,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "ecology-matched-normal-site": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 146,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "irrigation-matched-dry-kazakh": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 172,
+      "r2aDryDays": 117,
+      "r2bDryDays": 0
+    },
+    "irrigation-matched-dry-swiss": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 182,
+      "r2aDryDays": 108,
+      "r2bDryDays": 0
+    },
+    "ecology-matched-dry-kazakh": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 0,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "ecology-matched-dry-site": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 131,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "ecology-matched-dry-swiss": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 92,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    },
+    "ecology-fixed-dry-kazakh": {
+      "r2aExceedanceDays": 0,
+      "r2bExceedanceDays": 0,
+      "r2aDryDays": 0,
+      "r2bDryDays": 0
+    }
+  },
+  "qualification": "180mg/L background and250mg/L limit remain hypothetical; this review does not activate quality sizing or establish ecological or official quality status. Equality/dry/chunk behavior also covered by six reviewed native witness tests; no annual cases rerun."
+}

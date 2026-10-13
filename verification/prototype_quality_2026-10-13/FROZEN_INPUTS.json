@@ -1,0 +1,10 @@
+{
+  "prototype/comparison-irrigation.json": "7037caba6f2620bb9d35b3571ac5a10c4b2b2f852da1aae0d2a9e8ffbdce599e",
+  "prototype/comparison-ecology.json": "72d677a1f721adcdf999fa5748f112e954d12a992c1be9d87d0a4cd629134ce0",
+  "prototype/comparison-stress-ecology.json": "77089535aaa036576ad410885449aa5aed956b6a3a18c7a8fa12be70ac5f85ba",
+  "prototype/comparison-stress-irrigation.json": "0fda9710f2379065fee1cbea1df89d203be4fcb6731b39fd77c098f006a243f3",
+  "prototype/targets.json": "31df113323d8449001fc1996ee748605bd661d25346f4bb250648049ad4aac1a",
+  "prototype/targets-stress.json": "df41cf640fd869776bf8c5efa01e859c234b8e1e7dc70de912bf153e3ab437cc",
+  "native/koksu/native_comparison.py": "d37914bbc6def87976daca1ad56a9afc07a458a777fd645747a15d56eb46ffd8",
+  "native/koksu/native_contracts.py": "b0ba2368158711d3e3aa00c8a9a2d8796493a92a1ce2b0c3d4456b7499b49b0b"
+}

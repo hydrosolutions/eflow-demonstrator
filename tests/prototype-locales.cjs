@@ -13,11 +13,13 @@ function phrases(html){
  return out.filter(s=>s&&!['English','Русский','Oʻzbekcha'].includes(s));
 }
 test('every rendered phrase and accessible description has complete RU and Uzbek coverage',()=>{
- const r=renderer(),texts=new Set();
+ const r=renderer().withQuality(),texts=new Set();
  const collect=html=>phrases(html).forEach(s=>texts.add(s));
  collect(fs.readFileSync(root+'/index.html','utf8'));
  for(const view of ['compare','assessment'])for(const operation of ['ecology','irrigation'])for(const forcing of ['normal','dry'])for(const basis of ['matched','fixed'])for(const method of ['swiss','kazakh','site'])for(let month=0;month<12;month++)for(const layer of ['inputs','results'])collect(r.render({view,operation,forcing,basis,method,month,layer,detail:true}));
  for(const body of ['R1','S1','R2','C1','D1','W1'])for(const landscape of ['landscape','network'])for(const operation of ['ecology','irrigation'])for(const method of ['swiss','kazakh','site'])collect(r.render({view:'system',body,landscape,operation,method}));
+ vm.runInContext('qualityData=null;',r.context);
+ for(const view of ['compare','assessment','system'])collect(r.render({view}));
  vm.runInContext('calculation=null;',r.context);
  for(const view of ['compare','assessment','system'])collect(r.render({view}));
  vm.runInContext("calculationError='Calculation data could not be loaded. Please reload or check the source files.';",r.context);

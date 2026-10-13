@@ -1,0 +1,58 @@
+{
+  "status": "candidate_pending_independent_review",
+  "uniqueNativeCases": 14,
+  "physicalChunks": 1708,
+  "displayCases": 24,
+  "elapsedSeconds": 195.92924125003628,
+  "peakRssBytes": 90292224,
+  "nativeTestsPassed": 21,
+  "qualitySha256": "3af8d06de90ef48c852636fe4b9a01748cb8213003f9a80c12e7d4e33079c4fb",
+  "waterFilesUnchanged": true,
+  "juneWitnesses": {
+    "ecology:matched:dry:site": {
+      "r2a": {
+        "meanFlowM3s": 0.5,
+        "flowWeightedSaltMgL": 180.0,
+        "exceededDays": 0,
+        "unknownDays": 0
+      },
+      "r2b": {
+        "meanFlowM3s": 0.9625,
+        "flowWeightedSaltMgL": 266.4935064935065,
+        "exceededDays": 30,
+        "unknownDays": 0
+      },
+      "drainMeanFlowM3s": 0.4625
+    },
+    "ecology:matched:dry:kazakh": {
+      "r2a": {
+        "meanFlowM3s": 1.2,
+        "flowWeightedSaltMgL": 180.0,
+        "exceededDays": 0,
+        "unknownDays": 0
+      },
+      "r2b": {
+        "meanFlowM3s": 1.3125,
+        "flowWeightedSaltMgL": 195.42857142857142,
+        "exceededDays": 0,
+        "unknownDays": 0
+      },
+      "drainMeanFlowM3s": 0.1125
+    },
+    "irrigation:matched:dry:kazakh": {
+      "r2a": {
+        "meanFlowM3s": 0.0,
+        "flowWeightedSaltMgL": null,
+        "exceededDays": 0,
+        "unknownDays": 30
+      },
+      "r2b": {
+        "meanFlowM3s": 0.7125,
+        "flowWeightedSaltMgL": 360.0,
+        "exceededDays": 30,
+        "unknownDays": 0
+      },
+      "drainMeanFlowM3s": 0.7125
+    }
+  }
+}

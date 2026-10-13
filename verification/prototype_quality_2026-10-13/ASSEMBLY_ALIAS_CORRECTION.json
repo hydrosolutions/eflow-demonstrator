@@ -1,0 +1,16 @@
+{
+  "change": "Normal/fixed aliases point to the matched water artifact actually selected by the UI; complete normal method records verified identical across matched/stress files",
+  "keys": [
+    "ecology:fixed:normal:swiss",
+    "ecology:fixed:normal:kazakh",
+    "ecology:fixed:normal:site",
+    "irrigation:fixed:normal:swiss",
+    "irrigation:fixed:normal:kazakh",
+    "irrigation:fixed:normal:site"
+  ],
+  "candidateBeforeSha256": "a5850a54c419272ce0fab3ce497f2a8cb06e1ad581936f4887831127062fd679",
+  "candidateAfterSha256": "3af8d06de90ef48c852636fe4b9a01748cb8213003f9a80c12e7d4e33079c4fb",
+  "executedBuilderSha256": "c56920db165c2d610389a29fd576ddf0036a715c13b8cf616f37407519f77f95",
+  "deliveredBuilderSha256": "074b759c388cf935c390297bff6bf824835a1a0d42d11b9635796fc3d5e0de38",
+  "nativeSourceAndResultsChanged": false
+}

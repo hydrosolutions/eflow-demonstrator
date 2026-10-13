@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "nativeReview": "INDEPENDENT_NUMERICAL_REVIEW.json",
+  "javascriptTests": {
+    "passed": 86,
+    "failed": 0
+  },
+  "nativeTests": {
+    "passed": 21,
+    "failed": 0
+  },
+  "browser": {
+    "url": "http://127.0.0.1:8781/prototype/",
+    "desktop": [
+      "English System and Assessment",
+      "Russian Assessment"
+    ],
+    "narrow": [
+      "Uzbek Latin at390px; no document horizontal overflow; quality cards wrap"
+    ],
+    "actualWitness": {
+      "selection": "ecology:matched:dry:site June",
+      "R2a": {
+        "flowM3s": 0.5,
+        "saltMgL": 180,
+        "exceedanceDays": 0
+      },
+      "R2b": {
+        "flowM3s": 0.9625,
+        "saltMgL": 266.4935064935065,
+        "exceedanceDays": 30
+      },
+      "annualR2bSaltExceedanceDays": 131
+    },
+    "dryWitness": "irrigation:matched:dry:kazakh June: R2a undefined with30dry days; R2b360mg/L with30exceedances",
+    "missingQuality": "Water remained rendered; cards showed Not calculated before quality admission"
+  },
+  "qualitySha256": "cae29df32b44a04373a8df5f98bcd376cee96a21794ff7aa422342d366791271",
+  "limitations": [
+    "Only hypothetical conservative salt; temperature remains in separate advanced explorer",
+    "No calibrated chemistry, official standard, ecological status or quality-based flow sizing",
+    "Local implementation; not committed or published"
+  ],
+  "screenshots": [
+    "quality-system-en.png",
+    "quality-mobile-uz.png"
+  ]
+}
