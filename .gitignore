@@ -5,3 +5,4 @@ __pycache__/
 *.pyc
 native-output/
 _site/
+node_modules/

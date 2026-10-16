@@ -1,0 +1,12 @@
+{
+  "name": "eflow-demonstrator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/*.cjs",
+    "test:browser": "node --test tests/browser/*.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

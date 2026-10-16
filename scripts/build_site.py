@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOTYPE_FILES = (
     'index.html', 'styles.css', 'locale-catalog.js', 'locale.js', 'flow-status.js',
     'quality-data.js', 'calculated-data.js', 'app.js', 'calculated-view.js',
+    'route-engine.js', 'route-cases.js', 'route-catalog.js', 'route-view.js', 'route.css',
     'comparison-ecology.json', 'comparison-irrigation.json',
     'comparison-stress-ecology.json', 'comparison-stress-irrigation.json',
     'targets.json', 'targets-stress.json', 'quality.json',

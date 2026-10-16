@@ -29,6 +29,10 @@ globalThis.PrototypeCatalog = {
     "Оценка",
     "Baholash"
   ],
+  "Decision tree": [
+    "Дерево решений",
+    "Qarorlar daraxti"
+  ],
   "FROM METHOD TO RIVER": [
     "ОТ МЕТОДА К РЕКЕ",
     "USULDAN DARYOGA"

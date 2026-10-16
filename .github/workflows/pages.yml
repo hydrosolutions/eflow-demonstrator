@@ -23,12 +23,26 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Validate browser calculations and selected publication
+          cache: npm
+      - name: Install browser-test dependencies
+        run: npm ci --ignore-scripts
+      - name: Validate calculations and selected publication
         run: |
-          node --test tests/*.cjs
+          npm test
           python -m unittest discover -s tests -p 'test_site_publication.py'
       - name: Build selected public files
         run: python scripts/build_site.py
+      - name: Install Chromium and system dependencies
+        run: npx --no-install playwright install --with-deps chromium
+      - name: Check the built Decision tree in the browser
+        env:
+          EFLOW_BASE_URL: http://127.0.0.1:8769
+        run: |
+          python -m http.server 8769 --bind 127.0.0.1 --directory _site > /tmp/eflow-browser-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          curl --retry 20 --retry-delay 1 --retry-connrefused --fail --silent --output /dev/null "$EFLOW_BASE_URL/prototype/"
+          npm run test:browser
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
